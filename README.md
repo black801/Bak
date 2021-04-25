@@ -9,7 +9,6 @@
 
 # <p align="center"> كود تنصيب السورس ⌯︙
 
- # <p align="center" style="color:#cb3349" > ``git clone https://github.com/SRC-DRAGON/DRAGON ;cd DRAGON;chmod +x install;./install``
 
 # <p align="center"> بعد انتهاء عمليه تثبيت السورس ⌯︙
 
