@@ -10531,7 +10531,7 @@ local TWEET_Msg =
 send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']') 
 return false
 end
-if text == 'المبرمج سمير' or text == 'المبرمج or text == 'سمير' then
+if text == 'المبرمج سمير' or text == 'المبرمج' or text == 'سمير' then
 local Text = [[
 ✪┃مالك السورس يمكنك..💓
 ✪┃التواصل معه عن طريق معرفه
