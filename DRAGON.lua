@@ -2705,16 +2705,6 @@ end
 end
 end,nil)  
 end
-if text == 'بلاك' or text == 'بلاك هوس' or text == 'المالك بلاك ★' then 
-local Text = [[ 
-بلاك مالك سورس بكار
-]] 
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = '𝒃𝒍𝒂𝒄𝒌', url="t.me/UU_bh"}},} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-]] 
 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text = '𝒔𝒂𝒎𝒆𝒆𝒓', url="t.me/DV_AL7"}},} 
@@ -11613,7 +11603,7 @@ local List = {
 • 𝗖𝗛 - @BK_b_1 💞.
 ]],
 [[
-??𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
+𝐘𝐨𝐮𝐫 𝐈𝐃 ☤🇪🇬- #id 
 𝐔𝐬𝐞𝐫𝐍𝐚☤🇪🇬- #username 
 𝐒𝐭𝐚𝐬𝐓 ☤🇪🇬- #stast 
 𝐌𝐬𝐠𝐒☤🇪🇬 - #msgs
@@ -13556,7 +13546,7 @@ local Teext =[[
 ★ رفع + تنزيل ← خنزير
 ★ تاك للخنازير
 ★ مسح الخنازير
-•┉ • ┉ • ┉ ??𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
+•┉ • ┉ • ┉ 𝒃𝒂𝒌𝒂𝒓 ┉ • ┉ • ┉•
 ★ رفع + تنزيل ← خول
 ★ تاك للخولات
 ★ مسح الخولات
