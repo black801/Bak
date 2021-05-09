@@ -874,7 +874,7 @@ end
 if DevSoFi(msg) then
 local bl = ' ☃️ اهلا عزيزي آلمـطـور\n ☃️ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n ☃️ تسـتطـيع‌‏ آلتحگم باوامر البوت\n ☃️ من خلاال الكيبورت خاص بك\n ☃️ قناة سورس البوت [اضغط هنا](t.me/BK_b_1)'
 local keyboard = {
-{'مبرمج السورس '},
+{'سمير مبرمج السورس','بلاك مالك السورس'},
 {'قناه السورس','بوت تواصل'},
 {'اضف رد عام','حذف رد عام'},
 {'اضف رد متعدد','حذف رد متعدد'},
@@ -913,7 +913,7 @@ if start then
 keyboard = start
 else
 keyboard = {
-{'مبرمج السورس','بوت التواصل'},
+{'سمير مبرمج السورس','بلاك مالك السورس'},
 {'قناة السورس'},
 {'تويت','صراحه'},
 {'المطور','انا مين'},
@@ -1088,7 +1088,7 @@ if text == 'الاصدار ' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' ☃️ اصدار سورس بكار \n ☃️ الاصدار »{ v 1.5}')
 end
-if text == 'مبرمج السورس ' and DevSoFi(msg) then
+if text == 'سمير مبرمج السورس' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [DEV Sameer](t.me/UU_bh)
@@ -1096,6 +1096,18 @@ local Text = [[
 keyboard = {}  
 keyboard.inline_keyboard = { 
 {{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'بلاك مالك السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[مالك السورس](t.me/B_l_a_c_k_H_o_u_s_e_1)
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𓆩𝒃𝒍𝒂𝒄𝒌𓆪', url="t.me/B_l_a_c_k_H_o_u_s_e_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2659,7 +2671,7 @@ end
 if text == 'السورس' or text == 'سورس' or text == 'يا سورس' then
 local Text = [[
 ☃️W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒂𝒌𝒂𝒓☃️
-☃️مرحب بيك في سورس بكار الاعظم☃️
+🧚‍♀️مرحب بيك في سورس بكار الاعظم🧚‍♀️
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -2675,7 +2687,7 @@ end
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
 local Text = [[
 W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒂𝒌𝒂𝒓☃️
-☃️اهلا بك في سورس بكار الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني ☃️
+🧚‍♀️اهلا بك في سورس بكار الجمدان لو عايز بوت بأسعار منسبه وبوت مميز كلمني 🧚‍♀️
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -4509,7 +4521,7 @@ end
 
 if (msg.content_.sticker_)  and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Sexy"..msg.chat_id_)=="del" then      
 sticker_id = msg.content_.sticker_.sticker_.persistent_id_
-st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..sticker_id.."&type=sticker")
+st = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..tonumber(00000000)..'&url='..tonumber(00000000).."&type=sticker")
 eker = JSON.decode(st)
 if eker.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
@@ -4531,7 +4543,7 @@ end
 end
 if (msg.content_.photo_) and msg.reply_to_message_id_ == 0 and database:get(bot_id.."lock:Lock:Sexy"..msg.chat_id_)=="del" then
 photo_id = msg.content_.photo_.sizes_[1].photo_.persistent_id_  
-Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..token..'&url='..photo_id.."&type=photo")
+Srrt = https.request('https://black-source.tk/BlackTeAM/ImageInfo.php?token='..tonumber(00000000)..'&url='..tonumber(00000000).."&type=photo")
 Sto = JSON.decode(Srrt)
 if Sto.ok.Info == "Indecent" then
 local list = database:smembers(bot_id.."Basic:Constructor"..msg.chat_id_)
@@ -9263,8 +9275,9 @@ end
 if text == "بوت" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'بكار')
 local DRAGON_Msg = {
-'اسمي  '..Namebot..' يا قلبي 🤤💚',
+'اسمي '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
+'انا '..Namebot..' إلى عمرو مهاب كابوس الكلاب 🍇 ',
 'اسمي  '..Namebot..' يعمري🌚🌝',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
@@ -10650,29 +10663,29 @@ local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sen
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = ' ☃️ هوا ابن الكلب دا الي ضافك😹» '..Name
+Text = '🥷 هوا ابن الكلب دا الي ضافك😹» '..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' ☃️ انت دخلت عبر الرابط يوسخ 🌝') 
+send(msg.chat_id_, msg.id_,' 🥷 انت دخلت عبر الرابط يوسخ 🌝') 
 end
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' ☃️ تم تعطيل امر  مين ضافني') 
+send(msg.chat_id_, msg.id_,' 🥷 تم تعطيل امر  مين ضافني') 
 end
 end
 if text == 'مين ضافني هنا' then
 if not database:get(bot_id..'Added:Me'..msg.chat_id_) then
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da and da.status_.ID == "ChatMemberStatusCreator" then
-send(msg.chat_id_, msg.id_,' ☃️ انت منشئ الجروب') 
+send(msg.chat_id_, msg.id_,' 🥷 انت منشئ الجروب') 
 return false
 end
 local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sender_user_id_)
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = ' ☃️ هوا ابن الكلب دا الي ضافك😹» '..Name
+Text = ' 🥷 هوا ابن الكلب دا الي ضافك😹» '..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
@@ -11985,7 +11998,7 @@ keyboard.inline_keyboard = {
 {text = 'مبرمج السورس', url="t.me/UU_bh"},
 },
 {
-{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂𝒌𝒂𝒓', url="t.me/BK_b_1"},
+{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂??𝒂𝒓', url="t.me/BK_b_1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
