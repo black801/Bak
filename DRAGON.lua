@@ -11581,23 +11581,24 @@ return false
 end
 ----------------------------------------------------------------- انتهئ الاوامر الجديدة
 if text == "تعطيل الزخرفه" and Manager(msg) then
-send(msg.chat_id_, msg.id_, '🧚‍♀️تم تعطيل الزخرفه')
+send(msg.chat_id_, msg.id_,  ❃تم تعطيل الزخرفه )
 database:set(bot_id.." sofi:zhrf_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل الزخرفه" and Manager(msg) then
-send(msg.chat_id_, msg.id_,'🧚‍♀️تم تفعيل الزخرفه')
+send(msg.chat_id_, msg.id_, ❃تم تفعيل الزخرفه )
 database:set(bot_id.." sofi:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." sofi:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
-zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
+zh = https.request( https://rudi-dev.tk/Amir1/Boyka.php?en= ..URL.escape(TextZhrfa)..  )
 zx = JSON.decode(zh)
-t = "\n🧚‍♀️قائمه الزخرفه \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
+t = "\n❃قائمه الزخرفه \n≪━━━━━━𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴━━━━━━≫\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
 end
+
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '🧚‍♀️ تم تعطيل الابراج')
 database:set(bot_id.." sofi:brj_Bots"..msg.chat_id_,"close")
