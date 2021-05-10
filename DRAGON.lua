@@ -6448,15 +6448,15 @@ end
 -----------------------------------------------------
 if text == 'مسح البنات' and Mod(msg) then
 database:del(bot_id..'Bro:User'..msg.chat_id_)
-send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع البنات بالجروب')
+send(msg.chat_id_, msg.id_, ' 🧚‍♀️ مستم تنزيل جميع البنات بالجروب')
 end
 if text == ("تاك للبنات") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n 🧚‍♀️ قائمة البنات الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
+t = "\n 🧚‍♀️ قائمة بنات الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
-t = t..""..k.."» البنات[@"..username.."]\n"
+t = t..""..k.."» البنات [@"..username.."]\n"
 else
 t = t..""..k.."» البنات `"..v.."`\n"
 end
