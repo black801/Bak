@@ -892,8 +892,8 @@ local keyboard = {
 {'تفعيل البوت الخدمي ','تعطيل البوت الخدمي '},
 {'تنظيف الجروبات ','تنظيف المشتركين '},
 {'جلب نسخه الاحتياطيه'},
-{'تحديث السورس ','الاصدار '},
-{'معلومات السيرفر '},
+{'تحديث السورس ','الاصدار'},
+{'معلومات السيرفر'},
 {'الغاء'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
@@ -1062,7 +1062,7 @@ if text == 'حذف كليشه ستارت ' and DevSoFi(msg) then
 database:del(bot_id..'Start:Bot') 
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم حذف كليشه ستارت')
 end
-if text == 'معلومات السيرفر ' and DevSoFi(msg) then 
+if text == 'معلومات السيرفر' and DevSoFi(msg) then 
 send(msg.chat_id_, msg.id_, io.popen([[
 linux_version=`lsb_release -ds`
 memUsedPrc=`free -m | awk 'NR==2{printf "%sMB/%sMB {%.2f%}\n", $3,$2,$3*100/$2 }'`
@@ -1084,7 +1084,7 @@ os.execute('wget https://raw.githubusercontent.com/black801/Bak/main/DRAGON.lua'
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم تحديث السورس \n 🧚‍♀️ لديك اخر اصدار لسورس بكار\n 🧚‍♀️ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
-if text == 'الاصدار ' and DevSoFi(msg) then 
+if text == 'الاصدار' and DevSoFi(msg) then 
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ اصدار سورس بكار \n 🧚‍♀️ الاصدار »{ v 1.5}')
 end
@@ -11581,24 +11581,22 @@ return false
 end
 ----------------------------------------------------------------- انتهئ الاوامر الجديدة
 if text == "تعطيل الزخرفه" and Manager(msg) then
-send(msg.chat_id_, msg.id_, '🧚‍♀️ تم تعطيل الزخرفه')
+send(msg.chat_id_, msg.id_, '🧚‍♀️تم تعطيل الزخرفه')
 database:set(bot_id.." sofi:zhrf_Bots"..msg.chat_id_,"close")
 end
 if text == "تفعيل الزخرفه" and Manager(msg) then
-send(msg.chat_id_, msg.id_,'🧚‍♀️ تم تفعيل الزخرفه')
+send(msg.chat_id_, msg.id_,'🧚‍♀️تم تفعيل الزخرفه')
 database:set(bot_id.." sofi:zhrf_Bots"..msg.chat_id_,"open")
 end
 if text and text:match("^زخرفه (.*)$") and database:get(bot_id.." sofi:zhrf_Bots"..msg.chat_id_) == "open" then
 local TextZhrfa = text:match("^زخرفه (.*)$")
 zh = https.request('https://rudi-dev.tk/Amir1/Boyka.php?en='..URL.escape(TextZhrfa)..'')
 zx = JSON.decode(zh)
-t = "\n🧚‍♀️ قائمه الزخرفه \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
+t = "\n🧚‍♀️قائمه الزخرفه \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
 t = t..i.."-  "..v.." \n"
-end
-send(msg.chat_id_, msg.id_, t..'≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫ٴ\n🧚‍♀️ [ 𝒃𝒂𝒌𝒂𝒓 ](t.me/BK_b_1)')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '🧚‍♀️ تم تعطيل الابراج')
