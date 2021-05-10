@@ -6450,7 +6450,7 @@ if text == 'مسح الارامل' and Mod(msg) then
 database:del(bot_id..'Bro:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع الارامل بالجروب')
 end
-if text == ("تاك للارامل") and Mod(msg) then
+if text == ("تاك للبنات") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
 t = "\n 🧚‍♀️ قائمة ارامل الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
@@ -6467,7 +6467,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 ---------
-if text == ("رفع ارمله") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
+if text == ("رفع بنتي ") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6485,7 +6485,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'Bro:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n 🧚‍♀️ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BK_b_1')..')'
-local  statuss  = '\n 🧚‍♀️ تم رفع ارمله في الجروب\n'
+local  statuss  = '\n 🧚‍♀️ تم رفع بنتي في الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
 end
@@ -6493,7 +6493,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 
-if (text == ("تنزيل ارمله")) and msg.reply_to_message_id_ and Mod(msg) then
+if (text == ("تنزيل بنتي ")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6507,7 +6507,7 @@ function start_function(extra, result, success)
 database:srem(bot_id..'Bro:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n 🧚‍♀️ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BK_b_1')..')'
-status  = '\n 🧚‍♀️ تم تنزيل ارمله من الجروب\n'
+status  = '\n 🧚‍♀️ تم تنزيل بنتي من الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -6726,7 +6726,7 @@ if text == 'مسح الاكساس' and Mod(msg) then
 database:del(bot_id..'Zahf:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع االاكساس')
 end
-if text == ("تاك للاكساس") and Mod(msg) then
+if text == ("تاك للابناء") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
 t = "\n 🧚‍♀️ قائمة كساس الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
@@ -6743,7 +6743,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 ---------
-if text == ("رفع كس") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
+if text == ("رفع ابني") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6761,7 +6761,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n 🧚‍♀️ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BK_b_1')..')'
-local  statuss  = '\n 🧚‍♀️ تم رفع كس في الجروب\n'
+local  statuss  = '\n 🧚‍♀️ تم رفع ابني في الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
 end
@@ -6769,7 +6769,7 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 
-if (text == ("تنزيل كس")) and msg.reply_to_message_id_ and Mod(msg) then
+if (text == ("تنزيل ابني")) and msg.reply_to_message_id_ and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6783,7 +6783,7 @@ function start_function(extra, result, success)
 database:srem(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n 🧚‍♀️ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'BK_b_1')..')'
-status  = '\n 🧚‍♀️ تم تنزيل كس من الجروب\n'
+status  = '\n 🧚‍♀️ تم تنزيل ابني من الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -12027,7 +12027,7 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 ☠مرحب بيك في اوامر  تنزيل ورفع ☠
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 ☠ تنزيل  رفع + امر ☠
-☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
+☠⟼⟼⟼⟼⟼𝒃𝒂??𝒂𝒓⟻⟻⟻⟻⟻☠
 🧚‍♀️ مميز
 🧚‍♀️ ادمن
 🧚‍♀️ مدير
@@ -12194,11 +12194,11 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 🧚‍♀️رفع + تنزيل ← بقره
 🧚‍♀️تاك للبقرات
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-🧚‍♀️رفع + تنزيل ← ارمله
-🧚‍♀️تاك للارامل
-☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 🧚‍♀️رفع + تنزيل ← خول
 🧚‍♀️تاك للخولات
+☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
+🧚‍♀️رفع + تنزيل ← وتكه
+🧚‍♀️تاك للوتكات
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 🧚‍♀️رفع + تنزيل ← حمار
 🧚‍♀️تاك للحمير
@@ -12206,11 +12206,11 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 🧚‍♀️رفع + تنزيل ← مزه
 🧚‍♀️تاك للمزز
 ٴ┉ ┉ ┉ ┉ ┉ 𝙨𝙤??𝙣 ┉ ┉ ┉ ┉  ┉ٴ
-🧚‍♀️رفع + تنزيل ← وتكه
-🧚‍♀️تاك للوتكات
+🧚‍♀️رفع + تنزيل ← بنتي
+🧚‍♀️تاك للبنات
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-🧚‍♀️رفع + تنزيل ← كس
-🧚‍♀️تاك للاكساس
+🧚‍♀️رفع + تنزيل ← ابني
+🧚‍♀️تاك للابناء
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 [ 𝒃𝒂𝒌𝒂𝒓](t.me/BK_b_1)
 ]]
