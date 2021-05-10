@@ -2848,7 +2848,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'مبرمج السورس' then
+if text == 'المبرمج' then
 local Text = [[ 
 [Sameer](t.me/UU_bh)
 ]] 
@@ -2916,7 +2916,7 @@ GetFile_Bot(msg)
 end
 if text == 'الاوامر المضافه' and Constructor(msg) then
 local list = database:smembers(bot_id..'List:Cmd:Group:New'..msg.chat_id_..'')
-t = " ☃️ قائمه الاوامر المضافه  \n≪━━━━━━𝒃𝒂𝒌𝒂??━━━━━━≫\n"
+t = " ☃️ قائمه الاوامر المضافه  \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
 Cmds = database:get(bot_id.."Set:Cmd:Group:New1"..msg.chat_id_..':'..v)
 print(Cmds)
