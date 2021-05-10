@@ -6456,7 +6456,7 @@ t = "\n 🧚‍♀️ قائمة البنات الجروب \n≪━━━━━�
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
-t = t..""..k.."» البنات [@"..username.."]\n"
+t = t..""..k.."» البنات[@"..username.."]\n"
 else
 t = t..""..k.."» البنات `"..v.."`\n"
 end
@@ -6732,7 +6732,7 @@ t = "\n 🧚‍♀️ قائمة الابناء الجروب \n≪━━━━�
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
-t = t..""..k.."» الابناء[@"..username.."]\n"
+t = t..""..k.."» االابناء[@"..username.."]\n"
 else
 t = t..""..k.."» "الابناء "..v.."\n"
 end
