@@ -2710,6 +2710,17 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+if text == 'مسلم' or text == 'مطور السورس' or text == 'بكار' then
+local Text = [[
+مبرمج سورس بكار
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'مبرمج السورس',url="t.me/UU_bh"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
 if text == 'تيم المسلم' or text == 'التيم' or text == 'متيجي' then
 local Text = [[
 🧚‍♀️تع يقلب انضم تيم المسلم🧚‍♀️
@@ -5595,7 +5606,7 @@ end
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not BasicConstructor(msg) then
-send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم تعطيل الرفع') 
+send(msg.chat_id_, msg.id_,' ??‍♀️ تم تعطيل الرفع') 
 return false
 end
 database:sadd(bot_id..'S00F4:MN:TF'..msg.chat_id_, userid)
@@ -9258,16 +9269,18 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'بكار').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'بكار')
 local DRAGON_Msg = {
-'ننعم يروحي 😻💙',
-'نعم يا قلب  '..Namebot..'',
+'نعم يروحي 😻💙',
+'قلب 😻💙',
 'عاوز اي من '..Namebot..'',
 'دوختو  '..Namebot..'',
+'نعم ياقلب  '..Namebot..'',
 'بتشقط وجي ويت 🤪',
 'ايوا جاي 🙈',
 'يعم هتسحر واجي 😾',
 'طب متصلي على النبي كدا 🙂💜',
 'تع اشرب شاي 🥺💙',
-'نعم'
+'نعم🧚‍♀️'
+
 }
 send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
 return false
@@ -9277,7 +9290,6 @@ Namebot = (database:get(bot_id..'Name:Bot') or 'بكار')
 local DRAGON_Msg = {
 'اسمي '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'انا '..Namebot..' إلى عمرو مهاب كابوس الكلاب 🍇 ',
 'اسمي  '..Namebot..' يعمري🌚🌝',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
