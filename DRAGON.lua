@@ -6446,13 +6446,13 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == 'مسح الارامل' and Mod(msg) then
+if text == 'مسح البنات' and Mod(msg) then
 database:del(bot_id..'Bro:User'..msg.chat_id_)
-send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع الارامل بالجروب')
+send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع البنات بالجروب')
 end
 if text == ("تاك للبنات") and Mod(msg) then
 local list = database:smembers(bot_id..'Bro:User'..msg.chat_id_)
-t = "\n 🧚‍♀️ قائمة ارامل الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
+t = "\n 🧚‍♀️ قائمة البنات الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6722,19 +6722,19 @@ tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumbe
 return false
 end
 -----------------------------------------------------
-if text == 'مسح الاكساس' and Mod(msg) then
+if text == 'مسح الابناء' and Mod(msg) then
 database:del(bot_id..'Zahf:User'..msg.chat_id_)
-send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع االاكساس')
+send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع الابناء')
 end
 if text == ("تاك للابناء") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🧚‍♀️ قائمة كساس الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
+t = "\n 🧚‍♀️ قائمة الابناء الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
-t = t..""..k.."» االابناء[@"..username.."]\n"
+t = t..""..k.."» الابناء[@"..username.."]\n"
 else
-t = t..""..k.."» الابناء "..v.."\n"
+t = t..""..k.."» "الابناء "..v.."\n"
 end
 end
 if #list == 0 then
