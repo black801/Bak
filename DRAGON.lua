@@ -170,7 +170,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1797771210,1536238833,994455333}   
+sudo_users = {SUDO,1797771210,1720330493,994455333}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -262,7 +262,7 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1797771210) then  
 var = true  
-elseif tonumber(user_id) == tonumber(1536238833) then
+elseif tonumber(user_id) == tonumber(1720330493) then
 var = true  
 elseif tonumber(user_id) == tonumber(994455333) then
 var = true  
@@ -300,7 +300,7 @@ end
 function Rutba(user_id,chat_id)
 if tonumber(user_id) == tonumber(1797771210) then  
 var = 'مبرمج السورس'
-elseif tonumber(user_id) == tonumber(1536238833) then
+elseif tonumber(user_id) == tonumber(1720330493) then
 var = 'مالك السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
@@ -2666,8 +2666,8 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪',url="t.me/B_l_a_c_k_H_o_u_s_e_1"}},
-{{text = '𓆩𝒃𝒍𝒂𝒄𝒌𓆪',url="t.me/B_l_a_c_k_H_o_u_s_e_1"}},
+{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪',url="t.me/UU_bh"}},
+{{text = '𓆩𝒃𝒂𝒕𝒐𝒕𓆪',url="t.me/DV_AL7"}},
 {{text = '𓆩𝒔𝒐𝒖𝒓𝒄𝒆𓆪', url="t.me/BK_b_1"}},
 {{text = '𓆩𝒃𝒂𝒌𝒂𝒓𓆪', url="t.me/Baka_r_bot"}},
 }
@@ -2683,14 +2683,14 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝒃𝒂𝒌𝒂𝒓🧚‍♀�
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪',url="t.me/UU_bh"}},
-{{text = '𓆩𝒃𝒍𝒂𝒄𝒌𓆪',url="t.me/B_l_a_c_k_H_o_u_s_e_1"}},
+{{text = '𓆩𝒃𝒂𝒕𝒐𝒕𓆪',url="t.me/DV_AL7"}},
 {{text = '𓆩𝒕𝒘𝒂𝒔𝒐𝒍𓆪',url="t.me/BK_b_1_bot"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'سمير' or text == 'بكار' or text == 'بلاك' then
+if text == 'سمير' or text == 'مسلم' or text == 'بلاك' then
 local Text = [[
 DEV Sameer
 ]]
@@ -2701,13 +2701,13 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'بكار' or text == 'مطور السورس' or text == 'بكار' then
+if text == 'بطوط الغلابه' or text == 'مطور السورس' or text == 'بطوط' then
 local Text = [[
-مبرمج سورس بكار
+مطور سورس بكار
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = 'مبرمج السورس',url="t.me/UU_bh"}},
+{{text = 'مطور السورس',url="t.me/DV_AL7"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2920,7 +2920,7 @@ local Text = [[
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓆩𝒍𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
+{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3855,7 +3855,7 @@ if result.sender_user_id_ == tonumber(1797771210) then
 send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك حظر مبرمج السورس\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1536238833) then
+if result.sender_user_id_ == tonumber(1720330493) then
 send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك حظر مالك السورس\n")
 return false 
 end
@@ -3967,7 +3967,7 @@ if result.sender_user_id_ == tonumber(1797771210) then
 send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك كتم مبرمج السورس\n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1536238833) then
+if result.sender_user_id_ == tonumber(1720330493) then
 send(msg.chat_id_, msg.id_, " 🧚‍♀️ لا يمكنك كتم مالك السورس\n")
 return false 
 end
@@ -11389,7 +11389,7 @@ end
 if text and text:match("^(gpinfo)$") or text and text:match("^معلومات الجروب$") then
 function gpinfo(arg,data)
 -- vardump(data) 
-DRAGONdx(msg.chat_id_, msg.id_, ' 🧚‍♀️ ايدي المجموعة » ( '..msg.chat_id_..' )\n 🧚‍♀️ عدد الادمنيه » ( *'..data.administrator_count_..' )*\n 🧚‍♀️ عدد المحظورين » ( *'..data.kicked_count_..' )*\n 🧚‍♀️ عدد الاعضاء » ( *'..data.member_count_..' )*\n', 'md') 
+DRAGONdx(msg.chat_id_, msg.id_, ' ??‍♀️ ايدي المجموعة » ( '..msg.chat_id_..' )\n 🧚‍♀️ عدد الادمنيه » ( *'..data.administrator_count_..' )*\n 🧚‍♀️ عدد المحظورين » ( *'..data.kicked_count_..' )*\n 🧚‍♀️ عدد الاعضاء » ( *'..data.member_count_..' )*\n', 'md') 
 end 
 getChannelFull(msg.chat_id_, gpinfo, nil) 
 end
@@ -12191,7 +12191,7 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 🧚‍♀️ وصف
 🧚‍♀️ تكرار + عدد
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-[ 𝑬𝑳𝑴𝑼????𝑰𝑴](t.me/BK_b_1)
+[ 𝒃𝒂𝒌𝒂𝒓](t.me/BK_b_1)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
