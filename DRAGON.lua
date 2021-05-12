@@ -2961,6 +2961,26 @@ keyboard = {} keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+
+if text == 'العاب' then
+local Text = [[
+𝒔𝒐𝒖𝒓𝒄𝒆 𝒃𝒂𝒌𝒂𝒓
+]]
+keyboard = {} keyboard.inline_keyboard = {
+{{text = 'لعبة فلابي بيرد 🐥',url="http://t.me/awesomebot?game=FlappyBird"}},
+{{text = 'سباق سيارات 🏎', url="http://t.me/gamee?game=F1Racer"}},
+{{text = 'كرة قدم ⚽', url="http://t.me/gamee?game=FootballStar"}},
+{{text = 'سباق الدراجات🏍', url="https://t.me/gamee?game=MotoFX"}},
+{{text = 'متشابه 👾', url="https://t.me/gamee?game=DiamondRows"}},
+{{text = 'ورق🤹‍♂', url="https://t.me/gamee?game=Hexonix"}},
+{{text = 'MotoFx', url="https://t.me/gamee?game=MotoFx"}},
+{{text = 'ورق🤹‍♂', url="https://t.me/gamee?game=Hexonix"}},
+{{text = 'لعبة 204', url="https://t.me/awesomebot?game=g2048"}},
+{{text = 'Squares🏁', url="https://t.me/gamee?game=Squares"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
 --------------------------------------------------------------------------------------------------------------
 if Chat_Type == 'GroupBot' and ChekAdd(msg.chat_id_) == true then
 if text == 'رفع نسخه الاحتياطيه' and DevSoFi(msg) then   
@@ -11070,7 +11090,7 @@ local List = {
 [[
 ⚕ 𓆰 𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 𝑮𝒓𝒐𝒖𝒑 ★
 • 🖤 | 𝑼𝑬𝑺 : #username ‌‌‏⚚
-• 🖤 | 𝑺𝑻𝑨 : #stast 🧙🏻‍♂ ☥
+• 🖤 | 𝑺??𝑨 : #stast 🧙🏻‍♂ ☥
 • 🖤 | 𝑰𝑫 : #id ‌‌‏♕
 • 🖤 | 𝑴𝑺𝑮 : #msgs 𓆊
 ]],
