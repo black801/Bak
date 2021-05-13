@@ -876,7 +876,8 @@ end
 if DevSoFi(msg) then
 local bl = ' 🧚‍♀️ اهلا عزيزي آلمـطـور\n 🧚‍♀️ آنت آلمـطـور آلآسـآسـي للبوت\n┉  ┉  ┉  ┉  ┉  ┉  ┉  ┉ء\n 🧚‍♀️ تسـتطـيع‌‏ آلتحگم باوامر البوت\n 🧚‍♀️ من خلاال الكيبورت خاص بك\n 🧚‍♀️ قناة سورس البوت [اضغط هنا](t.me/BK_b_1)'
 local keyboard = {
-{'مبرمج السورس '},
+
+{'مبرمج السورس','مالك السورس'},
 {'قناه السورس','بوت تواصل'},
 {'اضف رد عام','حذف رد عام'},
 {'اضف رد متعدد','حذف رد متعدد'},
@@ -915,7 +916,7 @@ if start then
 keyboard = start
 else
 keyboard = {
-{'مبرمج السورس','بوت التواصل'},
+{'مبرمج السورس','مالك السورس'},
 {'قناة السورس'},
 {'تويت','صراحه'},
 {'كتبات','انصحنى'},
@@ -1095,10 +1096,24 @@ if text == 'مبرمج السورس ' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
 [DEV Sameer](t.me/UU_bh)
+
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '𓆩𝒍𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
+{{text = '𓆩𝒔𝒂𝒎𝒆𝒆𝒓𓆪', url="t.me/UU_bh"}}, 
+} 
+local msg_id = msg.id_/2097152/0.5 
+https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+end
+if text == 'مالك السورس' and DevSoFi(msg) then
+database:del(bot_id..'Srt:Bot') 
+local Text = [[ 
+[DEV Batot](t.me/DV_AL7)
+
+]] 
+keyboard = {}  
+keyboard.inline_keyboard = { 
+{{text = '𓆩𝒃𝒂𝒕𝒐𝒕𓆪', url="t.me/DV_AL7"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -12695,7 +12710,7 @@ local Teext =[[
 🧚‍♀️شنو رئيك بهذا بالرد
 🧚‍♀️شنو رئيك بهاي بالرد
 🧚‍♀️تحب هذا
-☠⟼⟼⟼⟼⟼𝑬𝑳??𝑼𝑺𝑳𝑰𝑴⟻⟻⟻⟻⟻☠
+☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 [ 𝒃𝒂𝒌𝒂𝒓 ](t.me/BK_b_1)
 ]]
 keyboard = {} 
