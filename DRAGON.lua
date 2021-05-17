@@ -6649,7 +6649,7 @@ send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع أولاد�
 end
 if text == ("تاك لولادي") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🧚‍♀️ قائمة الابناء الجروب \n≪━━━━━━𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴━━━━━━≫\n"
+t = "\n 🧚‍♀️ قائمة كساس الجروب \n≪━━━━━━𝑬𝑳𝑴𝑼𝑺𝑳𝑰𝑴━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -6871,7 +6871,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 ---------
-if text == ("تاك للابناء") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
+if text == ("رفع بقلبي") and tonumber(msg.reply_to_message_id_) ~= 0 and Mod(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local BK_b_1 = database:get(bot_id..'text:ch:user')
 if BK_b_1 then
@@ -6889,7 +6889,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'Zahf:User'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n 🧚‍♀️ العضو ← ['..data.first_name_..'](t.me/'..(data.username_ or 'BK_b_1')..')'
-local  statuss  = '\n 🧚‍♀️ تم تاك للابناء في الجروب\n'
+local  statuss  = '\n 🧚‍♀️ تم رفع بقلبي في الجروب\n'
 send(msg.chat_id_, msg.id_, usertext..statuss)
 end,nil)
 end
@@ -7338,9 +7338,9 @@ if text == 'مسح الاكساس' and Mod(msg) then
 database:del(bot_id..'Zahf:User'..msg.chat_id_)
 send(msg.chat_id_, msg.id_, ' 🧚‍♀️ تم تنزيل جميع االاكساس')
 end
-if text == ("تاك للابناء") and Mod(msg) then
+if text == ("تاك للاكساس") and Mod(msg) then
 local list = database:smembers(bot_id..'Zahf:User'..msg.chat_id_)
-t = "\n 🧚‍♀️ قائمة الابناء الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
+t = "\n 🧚‍♀️ قائمة كساس الجروب \n≪━━━━━━𝒃𝒂𝒌𝒂𝒓━━━━━━≫\n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -12569,7 +12569,7 @@ https.request("https://api.telegram.org/bot"..token.."/answerCallbackQuery?callb
 return false
 end
 local Teext =[[
-W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
+W𝒆𝒍𝒄𝒐𝒎𝒆 ??𝒐 𝒃𝒂𝒌𝒂𝒓
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 ☠مرحب بيك في اوامر الحمايه ☠
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
@@ -13004,17 +13004,8 @@ W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒃𝒂𝒌𝒂𝒓
 🧚‍♀️رفع + تنزيل ← وتكه
 🧚‍♀️تاك للوتكات
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-🧚‍♀️رفع + تنزيل ابني
-🧚‍♀️تاك للابناء
-☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-🧚‍♀️رفع + تنزيل بنتي
-🧚‍♀️تاك لبناتي
-☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-🧚‍♀️رفع + تنزيل بقلبي
-🧚تاك  للبقلبي
-☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
-🧚‍♀️رفع + تتنزيل رقاصه
-🧚‍♀️ تاك للرقاصات
+🧚‍♀️رفع + تنزيل ← كس
+🧚‍♀️تاك للاكساس
 ☠⟼⟼⟼⟼⟼𝒃𝒂𝒌𝒂𝒓⟻⟻⟻⟻⟻☠
 [ 𝒃𝒂𝒌𝒂𝒓](t.me/BK_b_1)
 ]]
