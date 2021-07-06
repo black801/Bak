@@ -308,7 +308,7 @@ var = 'مبرمج عسليه '
 elseif tonumber(user_id) == tonumber(1757895188) then
 var = 'مبرمج السورس¹'  
 elseif tonumber(user_id) == tonumber(1124610301) then
-var = 'مبرمج  السورس²'  
+var = 'مبرمج السورس²'  
 elseif tonumber(user_id) == tonumber(1236115319) then
 var = 'العضو'  
 elseif tonumber(user_id) == tonumber(SUDO) then
