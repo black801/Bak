@@ -2673,10 +2673,10 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 JABWA 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️',url="t.me/J_a_b_w_a"}},
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 ASALIYA¹ 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️',url="t.me/AsaliyaEgypt"}},
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 ASALIYA² 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️',url="t.me/Asaliya_Egypt_2"}},
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 SOURSCE 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️', url="t.me/Sadauam"}},
+{{text = '☁️🇪🇬 JABWA 🇪🇬☁️',url="t.me/J_a_b_w_a"}},
+{{text = '☁️🇪🇬 ASALIYA¹ 🇪🇬☁️',url="t.me/AsaliyaEgypt"}},
+{{text = '☁️🇪🇬 ASALIYA² 🇪🇬☁️',url="t.me/Asaliya_Egypt_2"}},
+{{text = '☁️🇪🇬 SOURSCE 🇪🇬☁️', url="t.me/Sadauam"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Sadauam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2688,7 +2688,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 ASALIYA² 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️',url="t.me/Asaliya_Egypt_2"}},
+{{text = '☁️🇪🇬 ASALIYA² 🇪🇬☁️',url="t.me/Asaliya_Egypt_2"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Asaliya_Egypt_2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2700,7 +2700,7 @@ local Text = [[
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 ASALIYA 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️',url="t.me/AsaliyaEgypt"}},
+{{text = '☁️🇪🇬 ASALIYA 🇪🇬☁️',url="t.me/AsaliyaEgypt"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AsaliyaEgypt&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -2712,7 +2712,7 @@ DEV JABWA
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☁️🏴󠁧󠁢󠁥󠁮󠁧󠁿 JABWA 🏴󠁧󠁢󠁥󠁮󠁧󠁿☁️',url="t.me/J_a_b_w_a"}},
+{{text = '☁️🇪🇬 JABWA 🇪🇬☁️',url="t.me/J_a_b_w_a"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/J_a_b_w_a&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
