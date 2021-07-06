@@ -9331,33 +9331,38 @@ end
 return false
 end
 
+if text == ""..(database:get(bot_id..'Name:Bot') or 'الصعيدي').."" then  
+Namebot = (database:get(bot_id..'Name:Bot') or 'الصعيدي')
+local DRAGON_Msg = {
+'ننعم يروحي 😻💙',
+'نعم يا قلب  '..Namebot..'',
+'عاوز اي من '..Namebot..'',
+'دوختو  '..Namebot..'',
+'بتشقط وجي ويت 🤪',
+'ايوا جاي 🙈',
+'يعم هتسحر واجي 😾',
+'طب متصلي على النبي كدا 🙂💜',
+'تع اشرب شاي 🥺💙',
+'نعم'
+}
+send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
+return false
+end
 if text == "بوت" then  
-local msg_id = msg.id_/2097152/0.5
 Namebot = (database:get(bot_id..'Name:Bot') or 'الصعيدي')
 local DRAGON_Msg = {
 'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🌹',
+'اسمي  '..Namebot..' يعمري🌚🌝',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
-'مقولت اسمي '..Namebot..' في اي 🙄',
-'اسمي الكيوت '..Namebot..' 🌝💘',
-'اسمي  '..Namebot..' ياحياتي🧸♥️',
-'اسمي  '..Namebot..' يوتكه🙈🍑',
+'اسمي '..Namebot..' يا عسل🙈❤️',
 'انا '..Namebot..' إلى عمرو مهاب كابوس الكلاب 🦇',
+'مقولت اسمي '..Namebot..' في اي 🙄',
 }
-local Text = [[
- ]]..DRAGON_Msg[math.random(#DRAGON_Msg)]..[[ 
- 
-]]
-
- us = database:get(id_server..":token_username")
- agwa = database:get(id_server..":SUDO:USERNAME")
- agwa = agwa:gsub("%@", "")
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = '  مطور البوت 𖠕 ',url="t.me/"..agwa}},
+send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
+return false
 end
 if text=="اذاعه خاص" and msg.reply_to_message_id_ == 0 and Sudo(msg) then 
 if database:get(bot_id..'Bc:Bots') and not DevSoFi(msg) then 
