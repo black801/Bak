@@ -9331,34 +9331,38 @@ end
 return false
 end
 
-if text == ""..(database:get(bot_id..'Name:Bot') or 'ديشا').."" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'ديشا')
-local DRAGON_Msg = {
-'ننعم يروحي 😻💙',
-'نعم يا قلب  '..Namebot..'',
-'عاوز اي من '..Namebot..'',
-'دوختو  '..Namebot..'',
-'بتشقط وجي ويت 🤪',
-'ايوا جاي 🙈',
-'يعم هتسحر واجي 😾',
-'طب متصلي على النبي كدا 🙂💜',
-'تع اشرب شاي 🥺💙',
-'نعم'
-}
-send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
-return false
-end
 if text == "بوت" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'ديشا')
+local msg_id = msg.id_/2097152/0.5
+Namebot = (database:get(bot_id..'Name:Bot') or 'الصعيدي')
 local DRAGON_Msg = {
 'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
-'اسمي  '..Namebot..' يعمري🌚🌝',
+'اسمي  '..Namebot..' يعمري🌚🌹',
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
 'مقولت اسمي '..Namebot..' في اي 🙄',
+'اسمي الكيوت '..Namebot..' 🌝💘',
+'اسمي  '..Namebot..' ياحياتي🧸♥️',
+'اسمي  '..Namebot..' يوتكه🙈🍑',
+'انا '..Namebot..' إلى عمرو مهاب كابوس الكلاب 🦇',
 }
+local Text = [[
+ ]]..DRAGON_Msg[math.random(#DRAGON_Msg)]..[[ 
+ 
+]]
+
+ us = database:get(id_server..":token_username")
+ agwa = database:get(id_server..":SUDO:USERNAME")
+ agwa = agwa:gsub("%@", "")
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = '  مطور البوت 𖠕 ',url="t.me/"..agwa}},
+{{text = '  اضف البوت الي مجموعتك 𖠕 ',url="t.me/"..us.."?startgroup=start"}},
+}
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/'..us..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+return false
+end
 send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
 return false
 end
@@ -10936,7 +10940,7 @@ local List = {
 ☆•𝐢𝐝  : #id 𖣬
 ]],
 [[
-- 𓏬 𝐔𝐬𝐄𝐫 : #username 𓂅 .
+- 𓏬 ??𝐬𝐄𝐫 : #username 𓂅 .
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
