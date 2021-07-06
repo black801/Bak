@@ -2706,7 +2706,7 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/AsaliyaEgypt&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'جوبوا' or text == 'desA' or text == 'dEsa' then
+if text == 'جوبوا' or text == 'جابوا' or text == 'مبرمج' then
 local Text = [[
 DEV JABWA
 ]]
@@ -2846,7 +2846,7 @@ end
 
 if text == 'مبرمج السورس' then
 local Text = [[ 
-[DEV DESA](t.me/J_a_b_w_a)
+[DEV JABWA](t.me/J_a_b_w_a)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
