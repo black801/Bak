@@ -173,7 +173,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1779781675,1236115319,1757895188,1124610301}   
+sudo_users = {SUDO,968613145,1236115319,1757895188,1124610301}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -263,7 +263,7 @@ return false
 end 
 end
 function Can_or_NotCan(user_id,chat_id)
-if tonumber(user_id) == tonumber(1779781675) then  
+if tonumber(user_id) == tonumber(968613145) then  
 var = true  
 elseif tonumber(user_id) == tonumber(1757895188) then
 var = true  
@@ -303,7 +303,7 @@ end
 return var
 end 
 function Rutba(user_id,chat_id)
-if tonumber(user_id) == tonumber(1779781675) then  
+if tonumber(user_id) == tonumber(968613145) then  
 var = 'مبرمج عسليه '
 elseif tonumber(user_id) == tonumber(1757895188) then
 var = 'مبرمج السورس¹'  
@@ -2675,23 +2675,23 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '☁️🇪🇬 JABWA 🇪🇬☁️',url="t.me/J_a_b_w_a"}},
 {{text = '☁️🇪🇬 ASALIYA¹ 🇪🇬☁️',url="t.me/AsaliyaEgypt"}},
-{{text = '☁️🇪🇬 ASALIYA² 🇪🇬☁️',url="t.me/Asaliya_Egypt_2"}},
+{{text = '☁️🇪🇬 TETO 🇪🇬☁️',url="t.me/e2_c11"}},
 {{text = '☁️🇪🇬 SOURSCE 🇪🇬☁️', url="t.me/Sadauam"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Sadauam&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'مبرمج عسليه' or text == 'عٌسِـلَيِّهّـ' or text == 'البابا' then
+if text == 'تيتو' or text == 'عقرب' or text == 'مالك السورس' then
 local Text = [[
-[DEV ASALIYA](t.me/Asaliya_Egypt_2)
+[DEV TETO](t.me/e2_c11)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '☁️🇪🇬 ASALIYA² 🇪🇬☁️',url="t.me/Asaliya_Egypt_2"}},
+{{text = '☁️🇪🇬 TETO 🇪🇬☁️',url="t.me/e2_c11"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Asaliya_Egypt_2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/e2_c11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
 if text == 'عسليه مصر' or text == 'عسليه' or text == 'كريم عسليه' then
@@ -3765,8 +3765,8 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ✯ لا يمكنك حظر المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1779781675) then
-send(msg.chat_id_, msg.id_, " ✯ لا يمكنك حظر المبرمج عسليه \n")
+if result.sender_user_id_ == tonumber(968613145) then
+send(msg.chat_id_, msg.id_, " ✯ لا يمكنك حظر مالك السورس\n")
 return false 
 end
 if result.sender_user_id_ == tonumber(1757895188) then
@@ -3830,8 +3830,8 @@ if tonumber(result.id_) == tonumber(1124610301) then
 send(msg.chat_id_, msg.id_, " ✯ لا تسطيع حظر مطور السورس عام")
 return false 
 end
-if tonumber(result.id_) == tonumber(1779781675) then  
-send(msg.chat_id_, msg.id_, " ✯ لا تسطيع حظر المبرمج عسليه  عام")
+if tonumber(result.id_) == tonumber(968613145) then  
+send(msg.chat_id_, msg.id_, " ✯ لا تسطيع حظر مالك السورس عام")
 return false 
 end
 if result.id_ == tonumber(SUDO) then
@@ -3869,8 +3869,8 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ✯ لا تسطيع حظر البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1779781675) then  
-send(msg.chat_id_, msg.id_, " ✯ لا تسطيع حظر المبرمج عسليه  عام")
+if tonumber(userid) == tonumber(968613145) then  
+send(msg.chat_id_, msg.id_, " ✯ لا تسطيع حظر مالك السورس عام")
 return false 
 end
 if tonumber(userid) == tonumber(1236115319) then  
@@ -3913,8 +3913,8 @@ if result.sender_user_id_ == tonumber(SUDO) then
 send(msg.chat_id_, msg.id_, " ✯ لا يمكنك كتم المطور الاساسي \n")
 return false 
 end
-if result.sender_user_id_ == tonumber(1779781675) then
-send(msg.chat_id_, msg.id_, " ✯ لا يمكنك كتم المبرمج عسليه \n")
+if result.sender_user_id_ == tonumber(968613145) then
+send(msg.chat_id_, msg.id_, " ✯ لا يمكنك كتم مالك السورس\n")
 return false 
 end
 if result.sender_user_id_ == tonumber(1757895188) then
@@ -3965,8 +3965,8 @@ if tonumber(result.id_) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ✯ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(result.id_) == tonumber(1779781675) then  
-send(msg.chat_id_, msg.id_, " ✯ لا تسطيع كتم المبرمج عسليه  عام")
+if tonumber(result.id_) == tonumber(968613145) then  
+send(msg.chat_id_, msg.id_, " ✯ لا تسطيع كتم مالك السورس عام")
 return false 
 end
 if tonumber(result.id_) == tonumber(1757895188) then  
@@ -4016,8 +4016,8 @@ if tonumber(userid) == tonumber(bot_id) then
 send(msg.chat_id_, msg.id_, " ✯ لا تسطيع كتم البوت عام")
 return false 
 end
-if tonumber(userid) == tonumber(1779781675) then  
-send(msg.chat_id_, msg.id_, " ✯ لا تسطيع كتم المبرمج عسليه  عام")
+if tonumber(userid) == tonumber(968613145) then  
+send(msg.chat_id_, msg.id_, " ✯ لا تسطيع كتم مالك السورس عام")
 return false 
 end
 if tonumber(userid) == tonumber(1757895188) then  
