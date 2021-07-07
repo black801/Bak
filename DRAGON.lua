@@ -2674,7 +2674,7 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '☁️🇪🇬 JABWA 🇪🇬☁️',url="t.me/J_a_b_w_a"}},
-{{text = '☁️🇪🇬 ASALIYA¹ 🇪🇬☁️',url="t.me/AsaliyaEgypt"}},
+{{text = '☁️🇪🇬 ASALIYA 🇪🇬☁️',url="t.me/AsaliyaEgypt"}},
 {{text = '☁️🇪🇬 TETO 🇪🇬☁️',url="t.me/e2_c11"}},
 {{text = '☁️🇪🇬 SOURSCE 🇪🇬☁️', url="t.me/Sadauam"}},
 }
