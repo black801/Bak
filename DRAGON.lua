@@ -9349,7 +9349,7 @@ send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']')
 return false
 end
 if text == "بوت" then  
-Namebot = (database:get(bot_id..'Name:Bot') or 'الصعيدي')
+Namebot = (database:get(bot_id..'Name:Bot') or 'الامير')
 local DRAGON_Msg = {
 'اسمي  '..Namebot..' يا قلبي 🤤💚',
 'اسمي '..Namebot..' يا روحي🙈❤️',
@@ -9357,8 +9357,6 @@ local DRAGON_Msg = {
 'اسمي  '..Namebot..' يا قمر 🐭🤍',
 'اسمي  '..Namebot..' يامزه 🥺❤️',
 'اسمي  '..Namebot..' يعم 😒',
-'اسمي '..Namebot..' يا عسل🙈❤️',
-'انا '..Namebot..' إلى عمرو مهاب كابوس الكلاب 🦇',
 'مقولت اسمي '..Namebot..' في اي 🙄',
 }
 send(msg.chat_id_, msg.id_,'['..DRAGON_Msg[math.random(#DRAGON_Msg)]..']') 
@@ -10578,6 +10576,32 @@ if text == 'انا مين' then
 local rtp = Rutba(msg.sender_user_id_,msg.chat_id_)
 send(msg.chat_id_, msg.id_,' انت هنا » '..rtp)
 end
+
+
+if text == 'تيست' then 
+send(msg.chat_id_,msg.id_, ' مازلت علي قيد الحياه 🥺❤️ ') 
+return false
+end
+
+
+if text == 'سلام' then 
+send(msg.chat_id_,msg.id_, '[ابق تعاله كليوم..😹💔🎶](t.me/Sadauam)') 
+return false
+end
+
+
+if text == 'عسليه.' then 
+send(msg.chat_id_,msg.id_, '[عمك البابا ده متقربش يبني 😉❤](t.me/AsaliyaEgypt)') 
+return false
+end
+
+
+if text == 'بوتي' then 
+send(msg.chat_id_,msg.id_, '[قلب بوتكك من جواا 🥺♥️](t.me/Sadauam)') 
+return false
+end
+
+
 if text == "اسمي"  then 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(extra,result,success)
 if result.first_name_  then
@@ -11767,7 +11791,7 @@ send(msg.chat_id_, msg.id_,Text)
 end
 if text == 'بوت حذف' or text == 'رابط حذف' or text == 'رابط الحذف' then
 local Text = [[
-✯W𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝒕𝒉𝒆 𝒅𝒆𝒔𝒂✯
+✮ 𝗪𝗘𝗟𝗖𝗢𝗠𝗘 𝗧𝗢 𝘛𝘏𝘌 𝗦𝗔𝗜𝗗𝗔  ✮
 بوت حذف حساب ✯
 فكر قبل لا تتسرع وتروح
 ]]
