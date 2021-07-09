@@ -1091,7 +1091,7 @@ end
 
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/black801/lol/main/DRAGON.lua')
+os.execute('wget https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/DRAGON.lua')
 send(msg.chat_id_, msg.id_,' ✯ تم تحديث السورس \n ✯ لديك اخر اصدار لسورس ديشا\n ✯ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
