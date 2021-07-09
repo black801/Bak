@@ -160,7 +160,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/black801/lol/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -320,7 +320,7 @@ var = 'البوت'
 elseif database:sismember(bot_id..'Sudo:User', user_id) then
 var = database:get(bot_id.."Sudo:Rd"..msg.chat_id_) or 'المطور'  
 elseif database:sismember(bot_id..'CoSu'..chat_id, user_id) then
-var = database:get(bot_id.."CoSu:Rd"..msg.chat_id_) or 'ديشا'
+var = database:get(bot_id.."CoSu:Rd"..msg.chat_id_) or 'الصعيدي'
 elseif database:sismember(bot_id..'Basic:Constructor'..chat_id, user_id) then
 var = database:get(bot_id.."BasicConstructor:Rd"..msg.chat_id_) or 'المنشئ اساسي'
 elseif database:sismember(bot_id..'Constructor'..chat_id, user_id) then
@@ -914,7 +914,7 @@ local start = database:get(bot_id.."Start:Bot")
 if start then 
 SourceDRAGONr = start
 else
-SourceDRAGONr = '✯اهلا عزيزي\n✯انا بوت اسمي ديشا\n✯اختصاصي حمايه الجروبات\n✯من تكرار والسبام والتوجيه والخ…\n✯لتفعيلي اتبع الاخطوات…↓\n✯اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[✯معرف المطور '
+SourceDRAGONr = '✯اهلا عزيزي\n✯انا بوت اسمي الصعيدي\n✯اختصاصي حمايه الجروبات\n✯من تكرار والسبام والتوجيه والخ…\n✯لتفعيلي اتبع الاخطوات…↓\n✯اضفني الي مجموعتك وقم بترقيتي ادمن واكتب كلمه { تفعيل }  ويستطيع »{ منشئ او المشرفين } بتفعيل فقط\n[✯معرف المطور '
 end 
 send(msg.chat_id_, msg.id_, SourceDRAGONr) 
 end
@@ -1092,7 +1092,7 @@ end
 if text == 'تحديث السورس ' and DevSoFi(msg) then 
 os.execute('rm -rf DRAGON.lua')
 os.execute('wget https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ✯ تم تحديث السورس \n ✯ لديك اخر اصدار لسورس ديشا\n ✯ الاصدار » { v 1.5}')
+send(msg.chat_id_, msg.id_,' ✯ تم تحديث السورس \n ✯ لديك اخر اصدار لسورس الصعيدي\n ✯ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
 if text == 'الاصدار ' and DevSoFi(msg) then 
@@ -2386,8 +2386,8 @@ end
 return false
 end
 os.execute('rm -rf DRAGON.lua')
-os.execute('wget https://raw.githubusercontent.com/black801/lol/main/DRAGON.lua')
-send(msg.chat_id_, msg.id_,' ✯ تم تحديث السورس \n ✯ لديك اخر اصدار لسورس ديشا\n ✯ الاصدار » { v 1.5}')
+os.execute('wget https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/DRAGON.lua')
+send(msg.chat_id_, msg.id_,' ✯ تم تحديث السورس \n ✯ لديك اخر اصدار لسورس الصعيدي\n ✯ الاصدار » { v 1.5}')
 dofile('DRAGON.lua')  
 end
 
@@ -2726,7 +2726,7 @@ local TWEET_Msg = {
 "اخر اغنية سمعتها ?", 
 "تكلم عن نفسك", 
 "ليه انت مش سالك", 
-"ما هيا عيوب سورس ديشا؟ ", 
+"ما هيا عيوب سورس الصعيدي؟ ", 
 "اخر كتاب قرآته", 
 "روايتك المفضله ?", 
 "اخر اكله اكلتها", 
@@ -4189,12 +4189,12 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if DevSoFi(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/black801/lol/main/getfile.json")
+local Get_Files, res = https.request("https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
 if Get_info then
-local TextS = "\n ✯ اهلا بك في متجر ملفات ديشا\n ✯ ملفات السورس ↓\n≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n\n"
+local TextS = "\n ✯ اهلا بك في متجر ملفات الصعيدي\n ✯ ملفات السورس ↓\n≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n\n"
 local TextE = "\n≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n ✯ علامة تعني { ✔️ } ملف مفعل\n ✯ علامة تعني { ✖ } ملف معطل\n ✯ قناة سورس الصعيدي↓\n".." ✯ [اضغط هنا لدخول](t.me/Sadauam) \n"
 local NumFile = 0
 for name,Info in pairs(res.plugins_) do
@@ -4227,7 +4227,7 @@ t = " ✯ الملف » "..file.."\n ✯ تم تعطيل ملف \n"
 else
 t = " ✯ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/black801/lol/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -4247,7 +4247,7 @@ t = " ✯ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ✯ الملف » "..file.."\n ✯ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/black801/lol/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.githubusercontent.com/AsaliyaEgypt/Bak/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -4409,13 +4409,13 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false 
 end
-if text == ("مسح قائمه ديشا") and Sudo(msg) then
+if text == ("مسح قائمه الصعيدي") and Sudo(msg) then
 database:del(bot_id..'CoSu'..msg.chat_id_)
-send(msg.chat_id_, msg.id_, '\n ✯ تم مسح قائمه ديشا')
+send(msg.chat_id_, msg.id_, '\n ✯ تم مسح قائمه الصعيدي')
 return false
 end
 
-if text == 'قائمه ديشا' and Sudo(msg) then
+if text == 'قائمه الصعيدي' and Sudo(msg) then
 local list = database:smembers(bot_id..'CoSu'..msg.chat_id_)
 t = "\n ✯ قائمه الصعيدي\n≪━━━━━━  ✯SAIDI✯ ━━━━━━≫\n"
 for k,v in pairs(list) do
@@ -4427,7 +4427,7 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = " ✯ لا يوجد احد في قائمه ديشا"
+t = " ✯ لا يوجد احد في قائمه الصعيدي"
 end
 send(msg.chat_id_, msg.id_, t)
 return false
@@ -4449,7 +4449,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 end
 
-if text == ("رفع ديشا") and msg.reply_to_message_id_ and Sudo(msg) then
+if text == ("رفع الصعيدي") and msg.reply_to_message_id_ and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4463,7 +4463,7 @@ function start_function(extra, result, success)
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n ✯ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Sadauam')..')'
-status  = '\n ✯ تم ترقيته ديشا'
+status  = '\n ✯ تم ترقيته الصعيدي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -4489,7 +4489,7 @@ return false
 end      
 database:sadd(bot_id..'CoSu'..msg.chat_id_, result.id_)
 usertext = '\n ✯ العضو » ['..result.title_..'](t.me/'..(username or 'Sadauam')..')'
-status  = '\n ✯ تم ترقيته ديشا'
+status  = '\n ✯ تم ترقيته الصعيدي'
 texts = usertext..status
 else
 texts = ' ✯ لا يوجد حساب بهاذا المعرف'
@@ -4514,16 +4514,16 @@ database:sadd(bot_id..'CoSu'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
 usertext = '\n ✯ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Sadauam')..')'
-status  = '\n ✯ تم ترقيته ديشا'
+status  = '\n ✯ تم ترقيته الصعيدي'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n ✯ العضو » '..userid..''
-status  = '\n ✯ تم ترقيته ديشا'
+status  = '\n ✯ تم ترقيته الصعيدي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-if text == ("تنزيل ديشا") and msg.reply_to_message_id_ and Sudo(msg) then
+if text == ("تنزيل الصعيدي") and msg.reply_to_message_id_ and Sudo(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -4537,7 +4537,7 @@ function start_function(extra, result, success)
 database:srem(bot_id..'CoSu'..msg.chat_id_, result.sender_user_id_)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 usertext = '\n ✯ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Sadauam')..')'
-status  = '\n ✯ تم تنزيله من ديشا'
+status  = '\n ✯ تم تنزيله من الصعيدي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end,nil)
 end
@@ -4559,7 +4559,7 @@ function start_function(extra, result, success)
 if result.id_ then
 database:srem(bot_id..'CoSu'..msg.chat_id_, result.id_)
 usertext = '\n ✯ العضو » ['..result.title_..'](t.me/'..(username or 'Sadauam')..')'
-status  = '\n ✯ تم تنزيله من ديشا'
+status  = '\n ✯ تم تنزيله من الصعيدي'
 texts = usertext..status
 else
 texts = ' ✯ لا يوجد حساب بهاذا المعرف'
@@ -4584,11 +4584,11 @@ database:srem(bot_id..'CoSu'..msg.chat_id_, userid)
 tdcli_function ({ID = "GetUser",user_id_ = userid},function(arg,data) 
 if data.first_name_ then
 usertext = '\n ✯ العضو » ['..data.first_name_..'](t.me/'..(data.username_ or 'Sadauam')..')'
-status  = '\n ✯ تم تنزيله من ديشا'
+status  = '\n ✯ تم تنزيله من الصعيدي'
 send(msg.chat_id_, msg.id_, usertext..status)
 else
 usertext = '\n ✯ العضو » '..userid..''
-status  = '\n ✯ تم تنزيله من ديشا'
+status  = '\n ✯ تم تنزيله من الصعيدي'
 send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
@@ -10358,7 +10358,7 @@ end
 end
 
 -------------------------------
-if text == ""..(database:get(bot_id..'Name:Bot') or 'ديشا').." غادر" or text == 'غادر' then  
+if text == ""..(database:get(bot_id..'Name:Bot') or 'الصعيدي').." غادر" or text == 'غادر' then  
 if Sudo(msg) and not database:get(bot_id..'Left:Bot'..msg.chat_id_)  then 
 tdcli_function ({ID = "ChangeChatMemberStatus",chat_id_=msg.chat_id_,user_id_=bot_id,status_={ID = "ChatMemberStatusLeft"},},function(e,g) end, nil) 
 send(msg.chat_id_, msg.id_,'※ تم مغادرة المجموعه') 
@@ -10367,7 +10367,7 @@ end
 return false  
 end
 if text == 'بوت' then
-Namebot = (database:get(bot_id..'Name:Bot') or 'ديشا')
+Namebot = (database:get(bot_id..'Name:Bot') or 'الصعيدي')
 send(msg.chat_id_, msg.id_,'اسمي ['..Namebot..'] يا قلبي ❤')
 end
 if text == 'الاحصائيات' then
@@ -12806,7 +12806,7 @@ if (text and text == "تفعيل اوامر التسليه") then
 send(msg.chat_id_, msg.id_, '  ✯ تم تفعيل اوامر التسليه')
 database:del(bot_id.."Fun_Bots:"..msg.chat_id_)
 end
-local Name_Bot = (database:get(bot_id..'Name:Bot') or 'ديشا')
+local Name_Bot = (database:get(bot_id..'Name:Bot') or 'الصعيدي')
 if not database:get(bot_id.."Fun_Bots:"..msg.chat_id_) then
 if text ==  ""..Name_Bot..' شنو رئيك بهاذا' and tonumber(msg.reply_to_message_id_) > 0 then     
 function FunBot(extra, result, success) 
