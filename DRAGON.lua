@@ -912,7 +912,7 @@ if text == '/start' then
 local bl = 'مرحبا بيك عزيزي العضو اليك الاوامر في الاسفل'
 local keyboard = {
 {'━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━'},
-{'تيتو','عسليه','تيتو'},
+{'اوكسجين','زيكا','عسليه','تيتو'},
 {'𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍'},
 {'ثيم','بايو','ايدي'},
 {'𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍'},
@@ -1428,6 +1428,7 @@ if text == 'الاصدار' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
 send(msg.chat_id_, msg.id_,' 🕊 اصدار سورس فايكينج{ 3x☆}')
 end
+
 if text == '━┅┅┄⟞⟦ مطورين السورس ⟧⟝┄┉┉━' then
 local Text = [[ 
 قناه يوزرات مطورين ومبرمجين السورس 💕🕊.
@@ -1440,6 +1441,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
+
 if text == '𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍' and DevSoFi(msg) then
 local Text = [[ 
 [قناه سورس فايكينج ادخل وتابع الجديد](t.me/V_I_K_I_N_G_1)
@@ -3235,20 +3237,33 @@ keyboard.inline_keyboard = {
 {{text = ' ASALIYA🇦🇪',url="t.me/AsaliyaEgypt"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Asaliya_Egypt_2/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'تيتو'  then
+if text == 'اوكسجين'  then
 local Text = [[
-تيتو مطور سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
+اوكسجين صاحب سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '𝙾𝚂𝙾𝚂🇦🇪',url="t.me/e2_c11"}},
+{{text = ' OXYGEN🇦🇪',url="t.me/Oxy_gen8"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/e2_c11&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Oxy_gen8/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+
+if text == 'زيكا'  then
+local Text = [[
+زيكا مالك سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = 'ZIKA🇦🇪',url="t.me/Zika120"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Zika120&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == 'تيتو'  then
 local Text = [[
 تيتو  مبرمج سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
@@ -3258,7 +3273,7 @@ keyboard.inline_keyboard = {
 {{text = 'ᴛ ᴇ ᴛ ᴏ - ᴏғғʟɪɴᴇ🇦🇪',url="t.me/e2_c11"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/26&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/e2_c11/26&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'يوتيوب' or text == 'بحث' or text == 'اليوتيوب' then
 local Text = [[
