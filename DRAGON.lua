@@ -21,7 +21,7 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍 :\na𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
@@ -40,7 +40,7 @@ end
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍 :\na𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
 io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n27[0;39;49m')
@@ -149,14 +149,41 @@ _redis = load_redis()
 print([[
 
 
-   ___            ___             ____               __    
-  / _ | ___ ___ _/ (_)_ _____ _  / __/__ ___ _____  / /_   
- / __ |(_-</ _ `/ / / // / _ `/ / _// _ `/ // / _ \/ __/   
-/_/ |_/___/\_,_/_/_/\_, /\_,_/ /___/\_, /\_, / .__/\__/    
-                   /___/           /___//___/_/            
+_ _ _         
+   |_|_|_|___|        
+   / /       \ \          
+  / /         \ \         
+ /_/   _     \_\        
+ | |  | _ \    | |        
+ | |  |   /    | |        
+ | |  |_|_\    | |        
+ |_|     _     |_|     
+ | |    /_\    | |      
+ | |   / _ \   | |      
+ | |  /_/ \_\  | |      
+ |_|       |_|      
+ | |  |  \/    | |      
+ | |  | |\/| | | |      
+ | |  |_|  |_| | |      
+ |_|   _     |_|      
+ | |  | _ )    | |        
+ | |  | _ \    | |        
+ | |  |___/    | |        
+ |_|    _    |_|      
+ | |   / _ \   | |      
+ | |  | (_) |  | |      
+ | |   \_/   | |      
+ |_|           |_|   
+ | |           | |
+ | |           | |
+ | |___ _ _| |
+ |_|___|___|___|_|  
+  
+              
+      
                           
 > CH ↯ ↝@V_I_K_I_N_G_1↜
-~> DEVELOPER ↯ {text = @AsaliyaEgypt
+~> DEVELOPER ↯ {text = @e2_c11
 ]])
 sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -3200,12 +3227,12 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ₁',url="t.me/e2_c11"},{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ²', url="t.me/AsaliyaEgypt"}},
-{{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ³',url="t.me/Zika120"}},
+{{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ³',url="t.me/e2_c11"}},
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》',url="t.me/V_I_K_I_N_G_1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -15209,7 +15236,7 @@ Msᴀɢ ~ #msgs
 𖡋 𝐔𝐒𝐄 #username 
 𖡋 𝐌𝐒𝐆 #msgs 
 𖡋 𝐒𝐓𝐀 #stast 
-𖡋 ??𝐃 #id 
+𖡋 ???? #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
 𖡋 𝗖𝗛 - ↝@V_I_K_I_N_G_1↜ 🕊
 ]],
@@ -15629,7 +15656,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
-𝐮𝐬𝐞𝐫𓂅 #username 𓍯
+𝐮𝐬𝐞𝐫𓂅 #username ??
 𝒎??????𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
 𓂅 𝗖𝗛 - ↝@V_I_K_I_N_G_1↜ 🕊
@@ -15654,7 +15681,7 @@ Msᴀɢ ~ #msgs
 ➥• MSG 𖥳 #msgs  - 🇪🇬.
 ➥• STA 𖦹 #stast - 🇪??.
 ➥• iD 𖥳 #id - 🇪🇬.
-➥• 𝗖?? - ↝@V_I_K_I_N_G_1↜ ??
+➥• 𝗖?? - ↝@V_I_K_I_N_G_1↜ 🕊
 ]],
 [[
 🇪🇬 - 𝄬 username . #username  ??
