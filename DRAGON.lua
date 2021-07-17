@@ -993,7 +993,6 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'ᴛ ᴇ ᴛ ᴏ - ᴏғғʟɪɴᴇ🇦🇪',url="t.me/e2_c11"}},
 {{text = ' ASALIYA🇦🇪',url="t.me/AsaliyaEgypt"}},
-{{text = '𝒕𝒐𝒂𝒔𝒌 🇦🇪',url="t.me/Asaliya_1"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1436,10 +1435,10 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس☎️', url="t.me/beboMANOO"}}, 
+{{text = 'مطورين السورس☎️', url="https://t.me/Asaliya_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == '𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍' and DevSoFi(msg) then
@@ -3219,8 +3218,8 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = ' ᴛ ᴇ ᴛ ᴏ - ᴏғғʟɪɴᴇ🇦🇪',url="t.me/e2_c11"},{text = ' ASALIYA🇦🇪', url="t.me/AsaliyaEgypt"}},
-{{text = '𝙾𝚂𝙾𝚂🇦🇪',url="t.me/e2_c11"}},
-{{text = ' 𝚃𝙾𝙰𝚂𝙺🇦🇪',url="t.me/e2_c11116BOT"}}, 
+{{text = 'ZIKA🇦🇪',url="t.me/Zika120"}},
+{{text = ' OXTGEN🇦🇪',url="t.me/Oxy_gen8"}}, 
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》 ', url="t.me/V_I_K_I_N_G_1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
@@ -6974,7 +6973,7 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = " 🕊  لا يوجد مطورين ثانويين"
+t = " ??  لا يوجد مطورين ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -15925,7 +15924,7 @@ end
 if text and text:match("^(gpinfo)$") or text and text:match("^معلومات الجروب$") then
 function gpinfo(arg,data)
 -- vardump(data) 
-DRAGONdx(msg.chat_id_, msg.id_, ' 🕊 ايدي المجموعة  ⇇↝ '..msg.chat_id_..' ↜\n 🕊 عدد الادمنيه  ⇇↝ *'..data.administrator_count_..' ↜*\n 🕊 عدد المحظورين  ⇇↝ *'..data.kicked_count_..' ↜*\n 🕊 عدد الاعضاء  ⇇↝ *'..data.member_count_..' ↜*\n', 'md') 
+DRAGONdx(msg.chat_id_, msg.id_, ' 🕊 ايدي المجموعة  ⇇↝ '..msg.chat_id_..' ↜\n 🕊 عدد الادمنيه  ⇇↝ *'..data.administrator_count_..' ↜*\n ?? عدد المحظورين  ⇇↝ *'..data.kicked_count_..' ↜*\n 🕊 عدد الاعضاء  ⇇↝ *'..data.member_count_..' ↜*\n', 'md') 
 end 
 getChannelFull(msg.chat_id_, gpinfo, nil) 
 end
