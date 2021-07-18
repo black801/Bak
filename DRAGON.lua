@@ -181,7 +181,7 @@ print(t)
 function vardump(value)  
 print(serpent.block(value, {comment=false}))   
 end 
-sudo_users = {SUDO,1124610301,1759990986,968613145,1890233810}   
+sudo_users = {SUDO,1124610301,1759990986,968613145,1890233810,1885313077}   
 function SudoBot(msg)  
 local DRAGON = false  
 for k,v in pairs(sudo_users) do  
@@ -281,11 +281,13 @@ end
 function Can_or_NotCan(user_id,chat_id)
 if tonumber(user_id) == tonumber(1124610301) then  
 var = true 
-if tonumber(user_id) == tonumber(1890233810) then  
-var = true 
+elseif tonumber(user_id) == tonumber(1890233810) then
+var = true  
 elseif tonumber(user_id) == tonumber(968613145) then
 var = true  
 elseif tonumber(user_id) == tonumber(1759990986) then
+var = true  
+elseif tonumber(user_id) == tonumber(1885313077) then
 var = true  
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = true  
@@ -327,6 +329,8 @@ elseif tonumber(user_id) == tonumber(1890233810) then
 var = 'صاحب السورس'
 elseif tonumber(user_id) == tonumber(1759990986) then
 var = 'مالك السورس'
+elseif tonumber(user_id) == tonumber(1885313077) then
+var = 'مطور السورس'
 elseif tonumber(user_id) == tonumber(SUDO) then
 var = 'المطور الاساسي'  
 elseif database:sismember(bot_id.."Dev:SoFi:2", user_id) then
@@ -3242,6 +3246,18 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Asaliya_Egypt_2/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
+if text == 'ᵗʷᵉᵉᵗʸ-ᵒᶠᶠˡᶤᶰᵉ' or text == 'تويتي' or text == 'مطور السورس'  then
+local Text = [[
+عسليه مبرمج سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
+]]
+keyboard = {} 
+keyboard.inline_keyboard = {
+{{text = ' ASALIYA 🇦🇪',url="t.me/Tweety_Ofline"}},
+}
+local msg_id = msg.id_/2097152/0.5
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Tweety_Ofline/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+end
+
 if text == 'اوكسجين' or text == 'كريم' or text == 'صاحب السورس'  then
 local Text = [[
 اوكسجين صاحب سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
@@ -5399,6 +5415,10 @@ return false
 end
 if tonumber(result.sender_user_id_) == tonumber(1759990986) then  
 send(msg.chat_id_, msg.id_, " 🕊 لا تسطيع حظر مالك السورس عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(1885313077) then  
+send(msg.chat_id_, msg.id_, " 🕊 لا تسطيع حظر مطور السورس عام")
 return false 
 end
 database:sadd(bot_id..'GBan:User', result.sender_user_id_)
@@ -8767,7 +8787,7 @@ local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
 send(msg.chat_id_, msg.id_,'['..textchuser..']')
 else
-send(msg.chat_id_, msg.id_,' 🕊 لا تستطيع استخدام البوت \n 🕊  يرجى الاشتراك بالقناه اولا \n 🕊  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+send(msg.chat_id_, msg.id_,' 🕊 لا تستطيع استخدام البوت \n 🕊  يرجى الاشتراك بالقناه اولا \n ??  اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
 end
 return false
 end
@@ -17294,7 +17314,7 @@ local Teext =[[
  🕊 اذاعه بالتوجيه
  🕊 اذاعه بالتوجيه خاص
  🕊 اذاعه بالتثبيت
-•┉ • ┉ • ┉ 《𝚅𝙸𝙺𝙸𝙽??》 ┉ • ┉ • ┉•
+•┉ • ┉ • ┉ 《𝚅𝙸𝙺𝙸𝙽𝙶》 ┉ • ┉ • ┉•
  🕊 جلب نسخه البوت
  🕊 رفع نسخه البوت
  🕊 ضع عدد الاعضاء + العدد
@@ -18224,8 +18244,6 @@ end
 
 end -- end new msg dev.mr sofi 
 end -- end callback dev.mr sofi
-
-
 
 
 
