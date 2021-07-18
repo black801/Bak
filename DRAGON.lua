@@ -3246,18 +3246,6 @@ local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Asaliya_Egypt_2/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 
-if text == 'ᵗʷᵉᵉᵗʸ-ᵒᶠᶠˡᶤᶰᵉ' or text == 'تويتي' or text == 'مطور السورس'  then
-local Text = [[
-عسليه مبرمج سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
-]]
-keyboard = {} 
-keyboard.inline_keyboard = {
-{{text = ' ASALIYA 🇦🇪',url="t.me/Tweety_Ofline"}},
-}
-local msg_id = msg.id_/2097152/0.5
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/Tweety_Ofline/27&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
-end
-
 if text == 'اوكسجين' or text == 'كريم' or text == 'صاحب السورس'  then
 local Text = [[
 اوكسجين صاحب سورس فايكينج للتواصل معه اتبع الزر الاسفل ⬇️💕.
@@ -13531,6 +13519,19 @@ end
 send(msg.chat_id_,msg.id_, ' البوت شغال ') 
 return false
 end
+
+
+if text == 'سيفي' or text == 'سي في' then 
+local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
+if not my_ph then
+send(msg.chat_id_, msg.id_,"  ") 
+return false  
+end
+send(msg.chat_id_,msg.id_, ' كفايه شقط يبني سيب حاجه لغيرك 😹👅 ') 
+return false
+end
+
+
 if text == 'سلام' then 
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -13540,6 +13541,7 @@ end
 send(msg.chat_id_,msg.id_, '[مع الف سلامه يقلبي متجيش تاني..😹💔🎶](t.me/V_I_K_I_N_G_1)')
 return false
 end
+
 if text == 'هاي' or text == 'هيي' then
 local my_ph = database:get(bot_id.."my_GHoeq2:status"..msg.chat_id_)
 if not my_ph then
@@ -13549,6 +13551,7 @@ end
 send(msg.chat_id_,msg.id_, '[باي..😺💜](t.me/V_I_K_I_N_G_1)')
 return false
 end
+
 if text then 
 list = {'برايفت'}
 for k,v in pairs(list) do
@@ -13563,6 +13566,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'النبي'}
 for k,v in pairs(list) do
@@ -13577,6 +13581,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'قفل المحن'}
 for k,v in pairs(list) do
@@ -13591,6 +13596,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'🙄'}
 for k,v in pairs(list) do
@@ -13605,6 +13611,7 @@ return false
 end
 end
 end
+
 if text then 
 list = {'فتح المحن'}
 for k,v in pairs(list) do
